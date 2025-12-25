@@ -1,0 +1,32 @@
+name: Verify Canonical Requirements
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-requirements:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate canonical sources
+        run: scripts/validate-canonical-sources.sh
+      - name: Validate requirement counts
+        run: scripts/validate-requirements.sh
+      - name: Upload requirement counts log
+        uses: actions/upload-artifact@v4
+        with:
+          name: requirement-counts
+          path: reports/requirement-counts.log
+      - name: Upload canonical sources log
+        uses: actions/upload-artifact@v4
+        with:
+          name: canonical-sources
+          path: reports/canonical-sources.log

@@ -1,0 +1,23 @@
+version: 1
+last_updated: 2025-12-25
+policy:
+  purpose: >-
+    Ensure requirement counts and system definitions are derived from canonical
+    source files and can be reproduced from the repository state.
+  rules:
+    - id: canonical-source-first
+      description: Resolve the authoritative file from index/canonical-sources.yaml before answering.
+    - id: blob-retrieval
+      description: Read the canonical file contents directly (no cached summaries).
+    - id: enumerate-before-aggregate
+      description: Compute counts by scanning for MoSCoW labels in the canonical file.
+    - id: cite-provenance
+      description: Cite the canonical file path and include verified metadata when reporting counts.
+  moscow_labels:
+    must: "- Must Have:"
+    should: "- Should Have:"
+    could: "- Could Have:"
+    wont: "- Won't Have:"
+  outputs:
+    verified_counts_index: index/verified-product-requirement-counts.yaml
+    reports_log: reports/requirement-counts.log
