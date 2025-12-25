@@ -29,14 +29,20 @@ extract_paths() {
   local file="$1"
 
   awk '
-    match($0, /^[[:space:]]*-[[:space:]]+[^#]+$/) {
-      val=substr($0, RSTART+2, RLENGTH-2)
-      gsub(/^[[:space:]]+|[[:space:]]+$/, "", val)
-      print val
+    # lines that are list items: remove leading "-" and any inline comment, trim whitespace
+    /^[[:space:]]*-[[:space:]]+[^#]+$/ {
+      line = $0
+      sub(/^[[:space:]]*-[[:space:]]*/, "", line)     # remove leading "- "
+      sub(/[[:space:]]+#.*$/, "", line)               # remove inline comment
+      gsub(/^[[:space:]]+|[[:space:]]+$/, "", line)   # trim
+      print line
     }
-    match($0, /:[[:space:]]+[^#]+$/) {
-      split($0, parts, ":")
-      val=parts[2]
+    # lines like "key: value" -- take text after the first ":" if it looks like a path
+    /^[^#]*:[[:space:]]+[^#[:space:]]/ {
+      # extract substring after first ":" and strip comments/whitespace
+      val = substr($0, index($0, ":") + 1)
+      sub(/^[[:space:]]+/, "", val)
+      sub(/[[:space:]]+#.*$/, "", val)
       gsub(/^[[:space:]]+|[[:space:]]+$/, "", val)
       if (val ~ /\//) print val
     }
