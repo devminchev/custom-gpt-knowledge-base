@@ -14,6 +14,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate canonical sources
+        run: scripts/validate-canonical-sources.sh
       - name: Validate requirement counts
         run: scripts/validate-requirements.sh
       - name: Upload requirement counts log
@@ -21,3 +25,8 @@ jobs:
         with:
           name: requirement-counts
           path: reports/requirement-counts.log
+      - name: Upload canonical sources log
+        uses: actions/upload-artifact@v4
+        with:
+          name: canonical-sources
+          path: reports/canonical-sources.log
