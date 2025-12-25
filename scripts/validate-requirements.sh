@@ -22,10 +22,34 @@ read_expected_counts() {
   local project="$1"
 
   awk -v project="$project" '
-    $1 == "projects:" { in_projects=1; next }
-    in_projects && $1 == project ":" { in_project=1; next }
-    in_project && $1 ~ /^[a-z_]+:$/ && $1 != project ":" && $1 != "moscow_counts:" { in_project=0; in_counts=0 }
-    in_project && $1 == "moscow_counts:" { in_counts=1; next }
+    function indent_len(line) {
+      match(line, /^[[:space:]]*/)
+      return RLENGTH
+    }
+    $1 == "projects:" { in_projects=1; projects_indent=indent_len($0); next }
+    in_projects && $1 == project ":" {
+      in_project=1
+      project_indent=indent_len($0)
+      next
+    }
+    in_project {
+      current_indent=indent_len($0)
+      if (current_indent <= project_indent && $1 ~ /^[a-z_]+:$/) {
+        in_project=0
+        in_counts=0
+      }
+    }
+    in_project && $1 == "moscow_counts:" {
+      in_counts=1
+      counts_indent=indent_len($0)
+      next
+    }
+    in_counts {
+      current_indent=indent_len($0)
+      if (current_indent <= counts_indent && $1 !~ /^(must|should|could|wont|total):/) {
+        in_counts=0
+      }
+    }
     in_project && in_counts && $1 ~ /^(must|should|could|wont|total):/ {
       key=$1; gsub(":", "", key); counts[key]=$2
     }
