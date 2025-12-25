@@ -1,0 +1,1040 @@
+{
+  "version": "1.0",
+  "tasks": [
+    {
+      "id": "plan.roadmap.prodops.ready",
+      "name": "Games added to Prod Ops roadmap",
+      "phase": "Plan",
+      "ownerRole": "ProdOps",
+      "swimlanes": [
+        "ProdOps",
+        "GameOps"
+      ],
+      "summary": "Prod Ops maintain an up to date roadmap that Game Ops use as the source of truth for upcoming releases.",
+      "gameOpsActions": [
+        "Check that roadmap entries exist for upcoming weeks",
+        "Verify statuses and dependencies are ready for Game Ops work"
+      ],
+      "externalTeams": [
+        {
+          "team": "ProdOps",
+          "interactionType": "Monday",
+          "etaDescription": "Prod Ops typically stay ahead so Game Ops rarely wait"
+        }
+      ],
+      "inputs": [
+        "Prod Ops roadmap board"
+      ],
+      "outputs": [
+        "Confirmed list of games planned for release"
+      ],
+      "timePerItemMinutes": 2,
+      "itemsPerWeek": 15,
+      "timePerWeekHours": 0.5,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Roadmap centralised in Monday with basic automations.",
+      "easyImprovements": "Migrate roadmap to Jira without losing automation.",
+      "automationPotential": "Read roadmap from Jira API and drive release orchestration automatically.",
+      "currentPain": "Dependency on Monday for automations and risk of losing them if board is removed.",
+      "dreamState": "Single roadmap system integrated with release orchestrator with no manual checks.",
+      "notes": ""
+    },
+    {
+      "id": "plan.roadmap.confirm.in.gameops",
+      "name": "Confirm games into Game Ops roadmap",
+      "phase": "Plan",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps"
+      ],
+      "summary": "Game Ops confirm which games they will work on, based on Prod Ops entries.",
+      "gameOpsActions": [
+        "Confirm games in the Game Ops view or board",
+        "Check that roadmap automations ran correctly"
+      ],
+      "externalTeams": [],
+      "inputs": [
+        "Prod Ops roadmap entries"
+      ],
+      "outputs": [
+        "Game Ops roadmap confirmation"
+      ],
+      "timePerItemMinutes": 10,
+      "itemsPerWeek": 15,
+      "timePerWeekHours": 2.5,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Games move from Add section into grouped roadmap boards.",
+      "easyImprovements": "Auto promote roadmap entries into Game Ops board once criteria are met.",
+      "automationPotential": "Replace manual confirmation with rules based promotion plus Contentful flags.",
+      "currentPain": "Manual verification and fragile automations.",
+      "dreamState": "Game Ops board is an automatic filtered view on the single roadmap source."
+    },
+    {
+      "id": "plan.mathsheet.maintenance",
+      "name": "Game Ops create and maintain Math sheet",
+      "phase": "Plan",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "ProdOps"
+      ],
+      "summary": "Export roadmap data and maintain a math sheet used as a staging area for configs.",
+      "gameOpsActions": [
+        "Export Monday board",
+        "Clean exported Excel",
+        "Update math sheet with required fields per game"
+      ],
+      "externalTeams": [
+        {
+          "team": "ProdOps",
+          "interactionType": "Monday",
+          "etaDescription": "Prod Ops update roadmap throughout the month"
+        }
+      ],
+      "inputs": [
+        "Monday roadmap export"
+      ],
+      "outputs": [
+        "Updated math sheet Excel"
+      ],
+      "timePerItemMinutes": 5,
+      "itemsPerWeek": 15,
+      "timePerWeekHours": 1.5,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Math sheet generated from roadmap rather than stand alone.",
+      "easyImprovements": "Generate sheet automatically from backend and store centrally.",
+      "automationPotential": "Eliminate math sheet by pushing all required numeric fields into Contentful GamePlatformConfig.",
+      "currentPain": "Duplicate data entry and opportunity for mismatch between sheet and CMS.",
+      "dreamState": "Single backend source for math and config data with no Excel dependency."
+    },
+    {
+      "id": "tickets.rel.creation",
+      "name": "Release ticket created and enriched",
+      "phase": "Plan",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "ProdOps"
+      ],
+      "summary": "Release tickets are automatically created when roadmap entries are added and Game Ops enrich them with IDs.",
+      "gameOpsActions": [
+        "Add game code and game ID to the release ticket",
+        "Keep ticket fields in sync with roadmap and CMS"
+      ],
+      "externalTeams": [
+        {
+          "team": "ProdOps",
+          "interactionType": "Jira",
+          "etaDescription": "Tickets created automatically when lines are added on the board"
+        }
+      ],
+      "inputs": [
+        "Roadmap item",
+        "Game identifiers"
+      ],
+      "outputs": [
+        "Complete release ticket per game"
+      ],
+      "timePerItemMinutes": 1,
+      "itemsPerWeek": 15,
+      "timePerWeekHours": 0.25,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Automatic ticket creation and merged patching and game tickets.",
+      "easyImprovements": "Sync identifiers automatically from Contentful or Cabo once created.",
+      "automationPotential": "Lambda that keeps Jira ticket fields in sync with Contentful game entries.",
+      "currentPain": "Manual copy paste of IDs into tickets.",
+      "dreamState": "Ticket fields auto populated from orchestrator and never edited manually."
+    },
+    {
+      "id": "assets.tiles.create",
+      "name": "Game tiles added to design board and created",
+      "phase": "Assets",
+      "ownerRole": "Design",
+      "swimlanes": [
+        "GameOps",
+        "Design",
+        "Compliance"
+      ],
+      "summary": "Game tiles are requested, designed and attached to games.",
+      "gameOpsActions": [
+        "Create design tickets with game info and requirements",
+        "Update statuses on design tickets",
+        "Download or collect assets from providers when needed"
+      ],
+      "externalTeams": [
+        {
+          "team": "Design",
+          "interactionType": "Jira",
+          "etaDescription": "Design works through tile tickets and provides assets"
+        },
+        {
+          "team": "Compliance",
+          "interactionType": "Jira",
+          "etaDescription": "Review tiles weekly and approve"
+        }
+      ],
+      "inputs": [
+        "Game name",
+        "Venture",
+        "Rating",
+        "Provider assets"
+      ],
+      "outputs": [
+        "Approved tile images per venture and game"
+      ],
+      "timePerItemMinutes": 5,
+      "itemsPerWeek": 25,
+      "timePerWeekHours": 7,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Tiles and approvals moved from Excel to Monday board and Jira.",
+      "easyImprovements": "Centralised asset download from provider or Bynder.",
+      "automationPotential": "Asset ingestion Lambda that fetches provider assets, creates Bynder assets and attaches URLs into Contentful automatically.",
+      "currentPain": "High manual volume and coordination between Game Ops, design and compliance.",
+      "dreamState": "Game creation automatically spawns tile work, design delivers to Bynder, and Contentful auto gets the correct variant."
+    },
+    {
+      "id": "assets.tiles.upload",
+      "name": "Game tile upload to GitHub",
+      "phase": "Assets",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "Design"
+      ],
+      "summary": "Final tiles are uploaded to GitHub repos used by the web front ends.",
+      "gameOpsActions": [
+        "Download tiles from design",
+        "Rename and organise files",
+        "Upload to the correct GitHub repo",
+        "Update any references"
+      ],
+      "externalTeams": [],
+      "inputs": [
+        "Final tile images"
+      ],
+      "outputs": [
+        "Tiles available in GitHub repos"
+      ],
+      "timePerItemMinutes": 15,
+      "itemsPerWeek": 10,
+      "timePerWeekHours": 2,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Scripts used to rename files and JPJ and VGN merged into one repo.",
+      "easyImprovements": "Push tiles through automated pipeline from Bynder to CDN.",
+      "automationPotential": "Replace GitHub upload with CDN pipelines and reference images only by URL from Contentful.",
+      "currentPain": "Manual file handling and Git workflows for images.",
+      "dreamState": "No direct GitHub interaction by Game Ops for assets."
+    },
+    {
+      "id": "reg.hasbro.approval",
+      "name": "Request Hasbro approval",
+      "phase": "Regulatory",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "Provider"
+      ],
+      "summary": "Send Monopoly themed games and countries for Hasbro brand approval.",
+      "gameOpsActions": [
+        "Export relevant games from roadmap",
+        "Prepare list of names and countries",
+        "Send to provider or Hasbro contact"
+      ],
+      "externalTeams": [
+        {
+          "team": "GameProviderLightWonder",
+          "interactionType": "Email",
+          "etaDescription": "Approval typically takes weeks"
+        }
+      ],
+      "inputs": [
+        "Monopoly venture games list"
+      ],
+      "outputs": [
+        "Hasbro approval confirmation per game"
+      ],
+      "timePerItemMinutes": 15,
+      "itemsPerWeek": 5,
+      "timePerWeekHours": 1,
+      "regions": [
+        "eu"
+      ],
+      "alreadyImproved": "Uses roadmap exports rather than manual gathering.",
+      "easyImprovements": "Prod Ops could trigger approvals while building roadmaps.",
+      "automationPotential": "Trigger Hasbro approval requests via provider API when roadmap item is created.",
+      "currentPain": "Long external lead time and manual tracking.",
+      "dreamState": "Hasbro approval status visible in Jira and Contentful automatically."
+    },
+    {
+      "id": "config.bet.send",
+      "name": "Send off bet configs to providers",
+      "phase": "Config",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "Provider"
+      ],
+      "summary": "Request bet configuration changes from each provider.",
+      "gameOpsActions": [
+        "Prepare bet config details per game and region",
+        "Send to providers via email or portals",
+        "Chase confirmations"
+      ],
+      "externalTeams": [
+        {
+          "team": "GameProviders",
+          "interactionType": "Email",
+          "etaDescription": "Varies widely by provider"
+        }
+      ],
+      "inputs": [
+        "Math sheet values",
+        "Roadmap priorities"
+      ],
+      "outputs": [
+        "Confirmed bet configs per game"
+      ],
+      "timePerItemMinutes": 20,
+      "itemsPerWeek": 15,
+      "timePerWeekHours": 5,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Standardised templates for requests.",
+      "easyImprovements": "Store desired bet configs in CMS and export automatically.",
+      "automationPotential": "Lambda pushes config changes to provider APIs and updates status in Jira and Contentful.",
+      "currentPain": "Heavy email work and inconsistent responses.",
+      "dreamState": "Bet configs orchestrated via APIs and centrally tracked with no email."
+    },
+    {
+      "id": "config.cabo.stage.setup",
+      "name": "Set up games in Cabo stage",
+      "phase": "Config",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps"
+      ],
+      "summary": "Create or configure games in Cabo stage with correct IDs and RTP.",
+      "gameOpsActions": [
+        "Use software ID and RTP from patch and config sheets",
+        "Create or update game records in Cabo stage"
+      ],
+      "externalTeams": [],
+      "inputs": [
+        "Math sheet",
+        "Bet configs",
+        "Patch info"
+      ],
+      "outputs": [
+        "Configured game entry in Cabo stage"
+      ],
+      "timePerItemMinutes": 20,
+      "itemsPerWeek": 15,
+      "timePerWeekHours": 5,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Standard forms used for Cabo data entry.",
+      "easyImprovements": "Drive Cabo stage setup directly from CMS values.",
+      "automationPotential": "Lambda that syncs CMS game configuration into Cabo via API.",
+      "currentPain": "Manual data entry and risk of mismatch.",
+      "dreamState": "Cabo is a projection of CMS config with no manual work."
+    },
+    {
+      "id": "config.patch.staging",
+      "name": "Create stage patches",
+      "phase": "Config",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps"
+      ],
+      "summary": "Create patch configuration for staging environment.",
+      "gameOpsActions": [
+        "Use Cabo ID, software ID and RTP to create patch entries",
+        "Populate patch forms in Contentful or internal tools"
+      ],
+      "externalTeams": [],
+      "inputs": [
+        "Cabo stage game",
+        "Math sheet",
+        "Bet configs"
+      ],
+      "outputs": [
+        "Staging patch configuration"
+      ],
+      "timePerItemMinutes": 15,
+      "itemsPerWeek": 15,
+      "timePerWeekHours": 3.5,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Patch forms standardised.",
+      "easyImprovements": "Auto generate patch entities per game from CMS config.",
+      "automationPotential": "Patch writer Lambda triggered when game config is ready.",
+      "currentPain": "Manual patch creation and duplication.",
+      "dreamState": "Patches generated and updated by orchestration logic only."
+    },
+    {
+      "id": "reg.spain.forms",
+      "name": "Spanish regulatory name and form",
+      "phase": "Regulatory",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "Compliance"
+      ],
+      "summary": "Ensure Spanish regulatory naming and forms are completed for games in ES.",
+      "gameOpsActions": [
+        "Request Spanish regulatory name from compliance",
+        "Fill Spanish regulatory form entries in Contentful for staging"
+      ],
+      "externalTeams": [
+        {
+          "team": "SpanishCompliance",
+          "interactionType": "Email",
+          "etaDescription": "Responds based on workload"
+        }
+      ],
+      "inputs": [
+        "Game details",
+        "Regulatory requirements"
+      ],
+      "outputs": [
+        "Spanish regulatory forms for staging"
+      ],
+      "timePerItemMinutes": 20,
+      "itemsPerWeek": 5,
+      "timePerWeekHours": 1.5,
+      "regions": [
+        "es"
+      ],
+      "alreadyImproved": "Forms centralised in Contentful.",
+      "easyImprovements": "Standardise fields and validations for Spain.",
+      "automationPotential": "Workflow steps and action functions to route ES games to compliance and back.",
+      "currentPain": "Manual back and forth and risk of missing fields.",
+      "dreamState": "Spain specific fields are just part of the normal game config workflow."
+    },
+    {
+      "id": "contentful.build.game.entries",
+      "name": "Build games in Contentful",
+      "phase": "ContentfulBuild",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "ProdOps"
+      ],
+      "summary": "Create and clone game entries in Contentful including game and siteGame.",
+      "gameOpsActions": [
+        "Create game model and siteGame entries for base venture",
+        "Clone siteGame to other ventures",
+        "Decide which ventures a given game should go to"
+      ],
+      "externalTeams": [],
+      "inputs": [
+        "Cabo config",
+        "Math sheet",
+        "Roadmap"
+      ],
+      "outputs": [
+        "GameV2 entries",
+        "SiteGameV2 entries"
+      ],
+      "timePerItemMinutes": 25,
+      "itemsPerWeek": 15,
+      "timePerWeekHours": 6,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Single model used and entries cloned rather than rebuilt.",
+      "easyImprovements": "Auto clone and venture mapping rules.",
+      "automationPotential": "App action that creates game and siteGame entries and clones across ventures based on config.",
+      "currentPain": "Manual creation and cloning, risk of inconsistent flags.",
+      "dreamState": "Game definitions created from a single release command with no manual cloning."
+    },
+    {
+      "id": "content.copy",
+      "name": "Request and apply copywriting",
+      "phase": "ContentfulBuild",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "Copywriters",
+        "ProdOps"
+      ],
+      "summary": "Request copy, receive it and paste into Contentful fields.",
+      "gameOpsActions": [
+        "Send list of games needing copy to copywriters",
+        "Receive copy and paste HTML into Contentful"
+      ],
+      "externalTeams": [
+        {
+          "team": "Copywriters",
+          "interactionType": "Email",
+          "etaDescription": "Provide copy ahead of release where possible"
+        }
+      ],
+      "inputs": [
+        "Game names and links",
+        "Copy briefs"
+      ],
+      "outputs": [
+        "Copy populated in Contentful"
+      ],
+      "timePerItemMinutes": 10,
+      "itemsPerWeek": 15,
+      "timePerWeekHours": 2.5,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Using lists instead of one-off requests.",
+      "easyImprovements": "Store copy directly on Jira or Contentful with collaborative editing.",
+      "automationPotential": "Copy fields integrated in Contentful workflows with minimal Game Ops involvement.",
+      "currentPain": "Manual mail and copy paste prone to errors.",
+      "dreamState": "Copy is authored directly on CMS entries by copywriters."
+    },
+    {
+      "id": "test.staging",
+      "name": "Staging testing and compliance checks",
+      "phase": "Test",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "Compliance"
+      ],
+      "summary": "Run staging test plans and verify RTP, configs and compliance.",
+      "gameOpsActions": [
+        "Follow TestRail test plans",
+        "Check RTP and config match spec",
+        "Confirm Spain specific requirements"
+      ],
+      "externalTeams": [],
+      "inputs": [
+        "Staging patch",
+        "Staging game entries",
+        "Test plans"
+      ],
+      "outputs": [
+        "Test results and Jira updates"
+      ],
+      "timePerItemMinutes": 30,
+      "itemsPerWeek": 15,
+      "timePerWeekHours": 7.5,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Consistent use of TestRail.",
+      "easyImprovements": "Automated regression for simple checks.",
+      "automationPotential": "Automated smoke tests and status updates into Jira.",
+      "currentPain": "Manual test runs and duplication of test evidence.",
+      "dreamState": "Most checks automated with dashboards, humans focus on edge cases."
+    },
+    {
+      "id": "content.metadata",
+      "name": "Add metadata while testing",
+      "phase": "ContentfulBuild",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "ProdOps"
+      ],
+      "summary": "Add theme and feature metadata to games while playing them.",
+      "gameOpsActions": [
+        "Play the game on staging",
+        "Determine theme and feature tags",
+        "Update Contentful fields"
+      ],
+      "externalTeams": [],
+      "inputs": [
+        "Game session impressions"
+      ],
+      "outputs": [
+        "Metadata tags on SiteGame"
+      ],
+      "timePerItemMinutes": 10,
+      "itemsPerWeek": 15,
+      "timePerWeekHours": 2.5,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Metadata stored in Contentful instead of multiple sheets.",
+      "easyImprovements": "Prod Ops prefill expected theme and features.",
+      "automationPotential": "Metadata entry from Prod Ops fields or taxonomy plus rule based defaults.",
+      "currentPain": "Research heavy and slow for Game Ops.",
+      "dreamState": "Prod Ops own metadata as part of content planning and CMS entry."
+    },
+    {
+      "id": "support.report.issues",
+      "name": "Report issues to providers",
+      "phase": "Support",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "Provider"
+      ],
+      "summary": "Raise issues during staging or live with providers and chase until resolved.",
+      "gameOpsActions": [
+        "Raise issue via email, portal or Skype",
+        "Attach screenshots and steps",
+        "Chase provider for updates"
+      ],
+      "externalTeams": [
+        {
+          "team": "GameProviders",
+          "interactionType": "Portal",
+          "etaDescription": "Response time varies by provider and severity"
+        }
+      ],
+      "inputs": [
+        "Test results",
+        "Player reports"
+      ],
+      "outputs": [
+        "Provider tickets and fixes"
+      ],
+      "timePerItemMinutes": 20,
+      "itemsPerWeek": 30,
+      "timePerWeekHours": 10,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Some standard channels per provider.",
+      "easyImprovements": "Unified issue template and tracking.",
+      "automationPotential": "Issue gateway Lambda that logs issues into Jira and provider APIs and syncs statuses.",
+      "currentPain": "Fragmented channels and no single view on issue status.",
+      "dreamState": "Single issue tracker bridging providers and internal view."
+    },
+    {
+      "id": "approval.director.live.hidden",
+      "name": "Director approval for live hidden",
+      "phase": "Release",
+      "ownerRole": "Director",
+      "swimlanes": [
+        "GameOps",
+        "Directors"
+      ],
+      "summary": "Director reviews dashboard and approves games to move to live hidden.",
+      "gameOpsActions": [
+        "Prepare dashboard or list of games ready",
+        "Ensure Jira reflects readiness",
+        "Chase directors for sign off"
+      ],
+      "externalTeams": [
+        {
+          "team": "Directors",
+          "interactionType": "Jira",
+          "etaDescription": "A few days per approval run"
+        }
+      ],
+      "inputs": [
+        "Jira tickets",
+        "Test results",
+        "Compliance status"
+      ],
+      "outputs": [
+        "Director approval recorded in tickets"
+      ],
+      "timePerItemMinutes": 1,
+      "itemsPerWeek": 300,
+      "timePerWeekHours": 5,
+      "regions": [
+        "eu",
+        "es"
+      ],
+      "alreadyImproved": "Use Jira dashboard instead of ad hoc approvals.",
+      "easyImprovements": "Combine approvals for live hidden and live into single event.",
+      "automationPotential": "Contentful workflow + Jira status transition triggered by director action in CMS.",
+      "currentPain": "High aggregate time and waiting for manual approval.",
+      "dreamState": "Single click approval in orchestrator app with full audit trail."
+    },
+    {
+      "id": "config.patch.prod.regforms.prod",
+      "name": "Add patch and reg form to production",
+      "phase": "Config",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps"
+      ],
+      "summary": "Promote staging patch and regulatory forms to production.",
+      "gameOpsActions": [
+        "Update patch configuration for production",
+        "Copy or promote regulatory form entries"
+      ],
+      "externalTeams": [],
+      "inputs": [
+        "Staging patch",
+        "Staging reg form"
+      ],
+      "outputs": [
+        "Production patch and reg form"
+      ],
+      "timePerItemMinutes": 20,
+      "itemsPerWeek": 15,
+      "timePerWeekHours": 5,
+      "regions": [
+        "eu",
+        "es"
+      ],
+      "alreadyImproved": "Structured reg forms.",
+      "easyImprovements": "Promote via automation rather than copy paste.",
+      "automationPotential": "Patch promotion Lambda triggered when workflow moves to ReadyForProd.",
+      "currentPain": "Manual promotion and risk of mismatch between staging and prod.",
+      "dreamState": "Single config promotion step that handles both patch and reg forms."
+    },
+    {
+      "id": "release.managers.progress.tickets",
+      "name": "Release managers progress tickets",
+      "phase": "Release",
+      "ownerRole": "ReleaseManager",
+      "swimlanes": [
+        "ReleaseManager",
+        "GameOps"
+      ],
+      "summary": "Release managers move Jira tickets through final states.",
+      "gameOpsActions": [
+        "Coordinate with release managers",
+        "Ensure tickets contain required evidence for transitions"
+      ],
+      "externalTeams": [
+        {
+          "team": "ReleaseManagers",
+          "interactionType": "Jira",
+          "etaDescription": "Based on release windows"
+        }
+      ],
+      "inputs": [
+        "Jira tickets",
+        "Evidence fields"
+      ],
+      "outputs": [
+        "Tickets moved to released states"
+      ],
+      "timePerItemMinutes": 5,
+      "itemsPerWeek": 15,
+      "timePerWeekHours": 1.25,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Unified ticket types.",
+      "easyImprovements": "Auto transition tickets when orchestration steps complete.",
+      "automationPotential": "Orchestrator updates Jira states directly.",
+      "currentPain": "Manual clicking across many tickets.",
+      "dreamState": "Tickets reflect orchestration status automatically."
+    },
+    {
+      "id": "release.live.hidden.add",
+      "name": "Add games to live hidden",
+      "phase": "Release",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps"
+      ],
+      "summary": "Configure games as live hidden before full release.",
+      "gameOpsActions": [
+        "Tick correct live hidden flags in Contentful or back office",
+        "Map games into live hidden placement lists"
+      ],
+      "externalTeams": [],
+      "inputs": [
+        "Game entries ready for release"
+      ],
+      "outputs": [
+        "Games live hidden but not visible by default"
+      ],
+      "timePerItemMinutes": 1,
+      "itemsPerWeek": 300,
+      "timePerWeekHours": 5,
+      "regions": [
+        "eu",
+        "es"
+      ],
+      "alreadyImproved": "",
+      "easyImprovements": "Drive live hidden change via automated placement index.",
+      "automationPotential": "Orchestrator updates placements indices and Contentful flags automatically.",
+      "currentPain": "Repetitive flag ticking.",
+      "dreamState": "Live hidden is just a workflow state value rather than manual flags."
+    },
+    {
+      "id": "release.live.hidden.test",
+      "name": "Test live hidden games",
+      "phase": "Test",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps"
+      ],
+      "summary": "Smoke test games live hidden in production.",
+      "gameOpsActions": [
+        "Tick production flags",
+        "Perform smoke tests on wallet, spins, RTP and configs"
+      ],
+      "externalTeams": [],
+      "inputs": [
+        "Live hidden configuration"
+      ],
+      "outputs": [
+        "Verified games ready for full release"
+      ],
+      "timePerItemMinutes": 15,
+      "itemsPerWeek": 15,
+      "timePerWeekHours": 3.75,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "",
+      "easyImprovements": "Template test scenarios and partly automate.",
+      "automationPotential": "Automated smoke tests with results stored against game entry.",
+      "currentPain": "Manual tests repeated per game.",
+      "dreamState": "Automated run for standard behaviour with dashboard view."
+    },
+    {
+      "id": "support.prod.issues",
+      "name": "Production issues raised with providers",
+      "phase": "Support",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "Provider"
+      ],
+      "summary": "Handle issues found after go live.",
+      "gameOpsActions": [
+        "Raise live issue tickets with providers",
+        "Coordinate fixes and retests"
+      ],
+      "externalTeams": [
+        {
+          "team": "GameProviders",
+          "interactionType": "Portal",
+          "etaDescription": "Varies widely"
+        }
+      ],
+      "inputs": [
+        "Monitoring results",
+        "Player complaints"
+      ],
+      "outputs": [
+        "Fixed issues and updated tickets"
+      ],
+      "timePerItemMinutes": 20,
+      "itemsPerWeek": 10,
+      "timePerWeekHours": 3.25,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "",
+      "easyImprovements": "Centralised incident template.",
+      "automationPotential": "Same as issue gateway in staging.",
+      "currentPain": "Fragmented and manual.",
+      "dreamState": "Single incident view and bi directional sync with providers."
+    },
+    {
+      "id": "reg.ukgc.ref",
+      "name": "Add UKGC reference",
+      "phase": "Regulatory",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "Compliance"
+      ],
+      "summary": "Ensure games are registered with UKGC and references are captured.",
+      "gameOpsActions": [
+        "Log into UKGC website",
+        "Add game details or fetch reference",
+        "Update documentation and CMS"
+      ],
+      "externalTeams": [],
+      "inputs": [
+        "Game details",
+        "Reg information"
+      ],
+      "outputs": [
+        "UKGC ref recorded for each game"
+      ],
+      "timePerItemMinutes": 20,
+      "itemsPerWeek": 10,
+      "timePerWeekHours": 3,
+      "regions": [
+        "uk"
+      ],
+      "alreadyImproved": "",
+      "easyImprovements": "Partly template the submission data.",
+      "automationPotential": "Limited if UKGC has no integration, but we can store refs centrally.",
+      "currentPain": "Manual website work and risk of blocking release.",
+      "dreamState": "UKGC reference is simple lookup from organised store."
+    },
+    {
+      "id": "release.go.live",
+      "name": "Release games to players",
+      "phase": "Release",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "SiteEditors",
+        "ProdOps"
+      ],
+      "summary": "Place games onto carousels, tabs and special sections.",
+      "gameOpsActions": [
+        "Place games on new games carousels and relevant tabs",
+        "Apply rating and venture specific placements",
+        "Update jackpot or exclusive pages when applicable"
+      ],
+      "externalTeams": [],
+      "inputs": [
+        "Approved live hidden games",
+        "Placement strategy"
+      ],
+      "outputs": [
+        "Games visible to players in correct positions"
+      ],
+      "timePerItemMinutes": 5,
+      "itemsPerWeek": 50,
+      "timePerWeekHours": 6,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Batch updates where possible.",
+      "easyImprovements": "Placement orchestrated via OpenSearch index rather than manual lists.",
+      "automationPotential": "Placement writer Lambda that updates indices based on configuration.",
+      "currentPain": "Manual placements for many surfaces.",
+      "dreamState": "One dataset drives placements across all surfaces and platforms."
+    },
+    {
+      "id": "removal.request",
+      "name": "Request removal of games",
+      "phase": "Removal",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "Directors"
+      ],
+      "summary": "Raise Jira REL tickets and obtain director approval for game removals.",
+      "gameOpsActions": [
+        "Create removal ticket in Jira",
+        "Collect justifications",
+        "Chase director approval"
+      ],
+      "externalTeams": [
+        {
+          "team": "Directors",
+          "interactionType": "Jira",
+          "etaDescription": "Based on priorities"
+        }
+      ],
+      "inputs": [
+        "List of games to remove"
+      ],
+      "outputs": [
+        "Approved removal tickets"
+      ],
+      "timePerItemMinutes": 10,
+      "itemsPerWeek": 10,
+      "timePerWeekHours": 1.75,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "No more email approvals, fully in Jira.",
+      "easyImprovements": "Standard templates per removal type.",
+      "automationPotential": "Removal requests triggered by metrics and executed via orchestrator.",
+      "currentPain": "Manual ticket creation.",
+      "dreamState": "Removals scheduled with one click and tracked end to end."
+    },
+    {
+      "id": "removal.execute",
+      "name": "Remove games from sites",
+      "phase": "Removal",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps",
+        "SiteEditors"
+      ],
+      "summary": "Remove games from all placements and disable them.",
+      "gameOpsActions": [
+        "Remove games from sections or carousels",
+        "Untick production flags or equivalent",
+        "Run removal tool where available"
+      ],
+      "externalTeams": [],
+      "inputs": [
+        "Approved removal ticket",
+        "Game placements"
+      ],
+      "outputs": [
+        "Games removed from all user facing surfaces"
+      ],
+      "timePerItemMinutes": 5,
+      "itemsPerWeek": 30,
+      "timePerWeekHours": 6,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "Contentful removal tool exists but is unreliable.",
+      "easyImprovements": "Fix and harden removal tool.",
+      "automationPotential": "Remove via game placements index and content flags automatically.",
+      "currentPain": "Manual multi place removal and unreliable tool.",
+      "dreamState": "Single command to decommission a game across all placements."
+    },
+    {
+      "id": "removal.verify",
+      "name": "Confirm games are gone",
+      "phase": "Removal",
+      "ownerRole": "GameOps",
+      "swimlanes": [
+        "GameOps"
+      ],
+      "summary": "Verify on desktop and mobile that removed games are truly gone.",
+      "gameOpsActions": [
+        "Check front end on multiple devices",
+        "Spot check search and carousels"
+      ],
+      "externalTeams": [],
+      "inputs": [
+        "Removal execution result"
+      ],
+      "outputs": [
+        "Verification that game is gone"
+      ],
+      "timePerItemMinutes": 5,
+      "itemsPerWeek": 30,
+      "timePerWeekHours": 2.5,
+      "regions": [
+        "eu",
+        "na"
+      ],
+      "alreadyImproved": "",
+      "easyImprovements": "Automated UI smoke tests.",
+      "automationPotential": "Automated checks using test scripts hitting search and placements APIs.",
+      "currentPain": "Manual check across many surfaces.",
+      "dreamState": "Automated tests verify removal and feed into Jira."
+    }
+  ]
+}

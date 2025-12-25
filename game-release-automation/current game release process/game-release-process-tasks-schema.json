@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/game-release-task.schema.json",
+  "title": "GameReleaseTask",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "phase",
+    "ownerRole",
+    "summary",
+    "gameOpsActions",
+    "externalTeams",
+    "automationPotential",
+    "currentPain",
+    "dreamState"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier used in code and configs"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human friendly name of the task"
+    },
+    "phase": {
+      "type": "string",
+      "enum": [
+        "Plan",
+        "Assets",
+        "Regulatory",
+        "Config",
+        "ContentfulBuild",
+        "Test",
+        "Release",
+        "Removal",
+        "Support"
+      ],
+      "description": "High level lifecycle phase"
+    },
+    "ownerRole": {
+      "type": "string",
+      "description": "Primary team responsible (GameOps, ProdOps, Design, Compliance, Provider, Director, ReleaseManager, SiteEditor, Mixed)"
+    },
+    "swimlanes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "All roles involved in this task"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Short summary of what this task achieves"
+    },
+    "gameOpsActions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Concrete steps performed today by Game Ops"
+    },
+    "externalTeams": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "team",
+          "interactionType"
+        ],
+        "properties": {
+          "team": {
+            "type": "string"
+          },
+          "interactionType": {
+            "type": "string",
+            "enum": [
+              "None",
+              "Email",
+              "Chat",
+              "Portal",
+              "Jira",
+              "ContentfulWorkflow",
+              "API"
+            ]
+          },
+          "etaDescription": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Which other teams or suppliers are involved, and how"
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Key inputs required to start this task"
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Key artefacts produced when this task is complete"
+    },
+    "timePerItemMinutes": {
+      "type": "number",
+      "description": "Average Game Ops time per game or tile in minutes"
+    },
+    "itemsPerWeek": {
+      "type": "number",
+      "description": "Typical weekly volume"
+    },
+    "timePerWeekHours": {
+      "type": "number",
+      "description": "Approximate hours per week spent by Game Ops on this task"
+    },
+    "regions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Regions or ventures affected (eu uk es na etc)"
+    },
+    "alreadyImproved": {
+      "type": "string",
+      "description": "Process improvements already implemented"
+    },
+    "easyImprovements": {
+      "type": "string",
+      "description": "Things we can do quickly with current stack"
+    },
+    "automationPotential": {
+      "type": "string",
+      "description": "Narrative description of automation opportunity and approach"
+    },
+    "currentPain": {
+      "type": "string",
+      "description": "Why this step is painful or risky today"
+    },
+    "dreamState": {
+      "type": "string",
+      "description": "Ideal future behaviour for this task"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Any extra comments or context"
+    }
+  }
+}
