@@ -1,0 +1,19 @@
+version: 1
+last_updated: 2025-12-25
+projects:
+  advanced_search:
+    requirements_file: projects/advanced-search/product/03-requirements/product-requirements.md
+    moscow_counts:
+      must: 25
+      should: 1
+      could: 5
+      wont: 0
+      total: 31
+  game_release_automation:
+    requirements_file: projects/game-release-automation/product/03-requirements/game-release-product-requirements.md
+    moscow_counts:
+      must: 38
+      should: 10
+      could: 2
+      wont: 0
+      total: 50

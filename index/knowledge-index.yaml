@@ -1,40 +1,72 @@
-version: 1
-last_updated: 2025-02-14
+version: 2
+last_updated: 2025-12-25
 categories:
-  source_of_truth:
-    description: Authoritative product and system documentation.
-    paths:
-      - projects/advanced-search/README.md
-      - projects/game-release-automation/README.md
-      - projects/work-app-orchestration/README.md
+  projects:
+    description: Project-level canonical sources and requirements.
+    canonical: true
+    entries:
+      advanced_search:
+        canonical: true
+        paths:
+          - projects/advanced-search/README.md
+          - projects/advanced-search/product/03-requirements/product-requirements.md
+          - projects/advanced-search/current/
+      game_release_automation:
+        canonical: true
+        paths:
+          - projects/game-release-automation/README.md
+          - projects/game-release-automation/product/03-requirements/game-release-product-requirements.md
+          - projects/game-release-automation/current/
+      work_app_orchestration:
+        canonical: true
+        paths:
+          - projects/work-app-orchestration/README.md
+          - projects/work-app-orchestration/current/
   architecture:
     description: System-wide architecture and infrastructure documentation.
+    canonical: true
     paths:
       - architecture/README.md
       - architecture/aws/
   contentful_models:
     description: Contentful CMS models, schemas, and related docs.
+    canonical: true
     paths:
       - contentful-models/README.md
+      - contentful-models/01-cms-modeling-principles-core.md
+      - contentful-models/04-navigation-architecture.md
+      - contentful-models/igaming-contentful-cms-architecture.md
+  contentful_custom_apps:
+    description: Contentful CMS custom apps and automation references.
+    canonical: true
+    paths:
+      - contentful-models/contentful-custom-apps-architecture.md
   search_pipeline:
     description: Search indexing and query pipeline references.
+    canonical: true
     paths:
       - search-pipeline/README.md
+      - search-pipeline/opensearch-index-mapping.json
+      - search-pipeline/contentful-opensearch-schema-guide.md
   epics:
     description: Product epics, investigations, and proposals.
+    canonical: false
     paths:
       - epics/README.md
   shared_knowledge:
     description: Glossary, design patterns, and cross-cutting references.
+    canonical: false
     paths:
       - shared-knowledge/README.md
       - shared-knowledge/glossary.md
   guides:
     description: Supplemental guides and GPT context instructions.
+    canonical: false
     paths:
       - guides/README.md
       - gpt-context-guides/README.md
   appendix:
     description: Diagrams and supplemental visuals.
+    canonical: false
     paths:
       - 90-appendix/
