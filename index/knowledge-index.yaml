@@ -1,0 +1,40 @@
+version: 1
+last_updated: 2025-02-14
+categories:
+  source_of_truth:
+    description: Authoritative product and system documentation.
+    paths:
+      - projects/advanced-search/README.md
+      - projects/game-release-automation/README.md
+      - projects/work-app-orchestration/README.md
+  architecture:
+    description: System-wide architecture and infrastructure documentation.
+    paths:
+      - architecture/README.md
+      - architecture/aws/
+  contentful_models:
+    description: Contentful CMS models, schemas, and related docs.
+    paths:
+      - contentful-models/README.md
+  search_pipeline:
+    description: Search indexing and query pipeline references.
+    paths:
+      - search-pipeline/README.md
+  epics:
+    description: Product epics, investigations, and proposals.
+    paths:
+      - epics/README.md
+  shared_knowledge:
+    description: Glossary, design patterns, and cross-cutting references.
+    paths:
+      - shared-knowledge/README.md
+      - shared-knowledge/glossary.md
+  guides:
+    description: Supplemental guides and GPT context instructions.
+    paths:
+      - guides/README.md
+      - gpt-context-guides/README.md
+  appendix:
+    description: Diagrams and supplemental visuals.
+    paths:
+      - 90-appendix/
