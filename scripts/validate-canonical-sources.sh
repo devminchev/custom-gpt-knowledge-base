@@ -29,7 +29,23 @@ extract_paths() {
   local file="$1"
 
   awk '
+    function indent_len(line) {
+      match(line, /^[[:space:]]*/)
+      return RLENGTH
+    }
+    /^[[:space:]]*priority_order:/ {
+      in_priority=1
+      priority_indent=indent_len($0)
+      next
+    }
+    {
+      current_indent=indent_len($0)
+      if (in_priority && current_indent <= priority_indent && $0 !~ /^[[:space:]]*-[[:space:]]+/) {
+        in_priority=0
+      }
+    }
     match($0, /^[[:space:]]*-[[:space:]]+[^#]+$/) {
+      if (in_priority) next
       val=$0
       sub(/^[[:space:]]*-[[:space:]]+/, "", val)
       gsub(/^[[:space:]]+|[[:space:]]+$/, "", val)
