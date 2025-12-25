@@ -1,0 +1,4 @@
+{
+  "description": "Canonical cross-project placeholder for OpenSearch index mappings. Replace with consolidated schema when available.",
+  "indices": {}
+}
