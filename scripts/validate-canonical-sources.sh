@@ -66,12 +66,13 @@ for path in "${paths[@]}"; do
   fi
 
   full_path="$repo_root/$path"
+  path_no_slash="${path%/}"
   if [[ "$path" == */ ]]; then
     if [[ ! -d "$full_path" ]]; then
       echo "Missing directory: $path" | tee -a "$log_file"
       exit 1
     fi
-    if [[ -z "$(git ls-tree -d --name-only origin/main "$path")" ]]; then
+    if [[ -z "$(git ls-tree -d --name-only origin/main "$path_no_slash")" ]]; then
       echo "Missing directory in origin/main: $path" | tee -a "$log_file"
       exit 1
     fi
