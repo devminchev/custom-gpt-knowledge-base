@@ -30,7 +30,8 @@ extract_paths() {
 
   awk '
     match($0, /^[[:space:]]*-[[:space:]]+[^#]+$/) {
-      val=substr($0, RSTART+2, RLENGTH-2)
+      val=$0
+      sub(/^[[:space:]]*-[[:space:]]+/, "", val)
       gsub(/^[[:space:]]+|[[:space:]]+$/, "", val)
       print val
     }
