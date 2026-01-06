@@ -1,3 +1,8 @@
+---
+title: "Recommendations for using architecture review details in the Custom GPT knowledge base"
+tags: [guides]
+aliases: []
+---
 # Recommendations for using architecture review details in the Custom GPT knowledge base
 
 These recommendations show how to organize and surface the architecture review details already documented in this repo so a Custom GPT can answer questions with higher accuracy and fewer follow-up prompts. The goal is to improve navigation, retrieval, and response quality without changing or overriding existing content.

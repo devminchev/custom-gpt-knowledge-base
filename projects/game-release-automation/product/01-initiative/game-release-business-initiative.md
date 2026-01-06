@@ -1,3 +1,8 @@
+---
+title: "New Project Initiative - GAME RELEASE AUTOMATION"
+tags: [projects, game-release-automation, product, initiative]
+aliases: []
+---
 # New Project Initiative - GAME RELEASE AUTOMATION
 
 ---

@@ -1,3 +1,8 @@
+---
+title: "OpenSearch Shared Aliases: ig-models and ig-sections"
+tags: [contentful-models]
+aliases: []
+---
 # OpenSearch Shared Aliases: ig-models and ig-sections
 
 ## 1. Overview

@@ -1,3 +1,8 @@
+---
+title: "Advanced Search Technical Viability Audit: As-Is System Analysis"
+tags: [projects, work-app-orchestration, current]
+aliases: []
+---
 # Advanced Search Technical Viability Audit: As-Is System Analysis
 
 > Context addenda you gave just now are **treated as ground truth** (OpenSearch cluster screenshots, API Gateway cache TTL, and the clarification that FE currently does the “search” by filtering BE’s *full* game list by name). I’ve merged those facts with the Work App System knowledge base below and **cited** the relevant internal docs wherever possible.

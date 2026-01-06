@@ -1,3 +1,8 @@
+---
+title: "Game Ops Release Process and Jira Analysis"
+tags: [projects, game-release-automation, product, jira-analysis]
+aliases: []
+---
 # Game Ops Release Process and Jira Analysis
 
 Based on Columns A, B & C, below is a summary of the Game ops Release Process, whilst also referencing what will be needed for the Jira Migration and what parts we could automate in the overall Game Ops Release Process

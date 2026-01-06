@@ -1,3 +1,8 @@
+---
+title: "1) Big picture: taxonomy vs. tags"
+tags: [projects, advanced-search, contentful-docs]
+aliases: []
+---
 Practical, “all-you-need” guide to Contentful’s taxonomy vs. tags—what they are, when to use which, how they show up in APIs, and patterns that work in real projects.
 
 # 1) Big picture: taxonomy vs. tags

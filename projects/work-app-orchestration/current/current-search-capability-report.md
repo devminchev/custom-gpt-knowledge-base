@@ -1,3 +1,8 @@
+---
+title: "Advanced Search Feasibility: As-Is Architecture Audit"
+tags: [projects, work-app-orchestration, current]
+aliases: []
+---
 # Advanced Search Feasibility: As-Is Architecture Audit
 
 # Problem Statement (Concise)

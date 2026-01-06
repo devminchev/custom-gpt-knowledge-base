@@ -1,3 +1,8 @@
+---
+title: "Game Ops Process Review — Excel Workbook Documentation"
+tags: [projects, game-release-automation, current]
+aliases: []
+---
 ````markdown
 # Game Ops Process Review — Excel Workbook Documentation
 

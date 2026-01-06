@@ -1,3 +1,8 @@
+---
+title: "Advanced Search – Solution Architecture"
+tags: [projects, advanced-search, target]
+aliases: []
+---
 # Advanced Search – Solution Architecture
 
 ## 1) Context (why now)

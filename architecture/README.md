@@ -1,3 +1,8 @@
+---
+title: "Architecture"
+tags: [architecture]
+aliases: []
+---
 # Architecture
 
 This folder contains system-wide architecture documentation and infrastructure references.

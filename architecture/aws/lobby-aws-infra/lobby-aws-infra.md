@@ -1,3 +1,8 @@
+---
+title: "Lobby Aws Infra"
+tags: [architecture, aws, lobby-aws-infra]
+aliases: []
+---
 ## 📌 Overview and Purpose
 
 The *Personalised Lobby AWS Infrastructure* repository (`lobby-aws-infra`) automates the setup of a development environment for the **Personalised Lobby** backend. Its primary purpose is to provision an **OpenSearch** cluster and related AWS resources consistently across dev environments[GitHub](https://gitlab.ballys.tech/excite/native/applications/lobby-aws-infra/blob/05f5d70945d6a6a37fb8610c2b9bbf3075967667/Readme.md#L18-L21). By using Infrastructure as Code (CloudFormation), it ensures that developers can easily deploy a sandbox OpenSearch domain and an API Gateway to interact with it. This allows the Personalised Lobby’s microservices (AWS Lambda functions) to have a search backend (OpenSearch) available in dev/test, and also provides a secure way to query OpenSearch directly via an API Gateway proxy[GitHub](https://gitlab.ballys.tech/excite/native/applications/lobby-aws-infra/blob/05f5d70945d6a6a37fb8610c2b9bbf3075967667/Readme.md#L164-L172). In simpler terms, this repo delivers the “plumbing” – the search engine service (OpenSearch) and configuration management – needed for the Personalised Lobby features to work.

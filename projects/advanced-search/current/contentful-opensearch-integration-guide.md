@@ -1,3 +1,8 @@
+---
+title: "Contentful → OpenSearch Integration (Deep-Dive Summary)"
+tags: [projects, advanced-search, current]
+aliases: []
+---
 # Contentful → OpenSearch Integration (Deep-Dive Summary)
 
 ---

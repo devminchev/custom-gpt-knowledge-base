@@ -1,3 +1,8 @@
+---
+title: "Contentful Migrations – Comprehensive Codebase Guide"
+tags: [architecture, aws]
+aliases: []
+---
 # Contentful Migrations – Comprehensive Codebase Guide
 
 ## Introduction

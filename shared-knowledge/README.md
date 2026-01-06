@@ -1,3 +1,8 @@
+---
+title: "Shared Knowledge"
+tags: [shared-knowledge]
+aliases: []
+---
 # Shared Knowledge
 
 Cross-cutting references used across projects live here.

@@ -1,3 +1,8 @@
+---
+title: "GET Search API Deep Analysis"
+tags: [projects, work-app-orchestration, current]
+aliases: []
+---
 # GET Search API Deep Analysis
 
 Implementation-accurate walkthrough of the current **GET search endpoint** that powers the “All Games” search for a venture.

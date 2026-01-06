@@ -1,3 +1,8 @@
+---
+title: "New Project Initiative - LOBBY FRONT END ENHANCEMENTS"
+tags: [projects, work-app-orchestration, product, initiative]
+aliases: []
+---
 # New Project Initiative - LOBBY FRONT END ENHANCEMENTS
 
 ---
