@@ -1,3 +1,8 @@
+---
+title: "05 · Contentful Inventory & Modeling Assessment"
+tags: [contentful-models]
+aliases: []
+---
 # 05 · Contentful Inventory & Modeling Assessment
 
 **Audience:** architects, CMS owners, platform leads  

@@ -1,3 +1,8 @@
+---
+title: "Game Release Automation Knowledge Base Guide"
+tags: [projects, game-release-automation]
+aliases: []
+---
 # Game Release Automation Knowledge Base Guide
 
 ## 🎯 Purpose

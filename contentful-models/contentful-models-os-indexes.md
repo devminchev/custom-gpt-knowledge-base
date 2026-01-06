@@ -1,3 +1,8 @@
+---
+title: "Contentful iGaming Models and OpenSearch Index Mapping"
+tags: [contentful-models]
+aliases: []
+---
 # Contentful iGaming Models and OpenSearch Index Mapping
 
 ## 1. Overview

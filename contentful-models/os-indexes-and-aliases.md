@@ -1,3 +1,8 @@
+---
+title: "OpenSearch Indexes and Aliases for iGaming Models"
+tags: [contentful-models]
+aliases: []
+---
 # OpenSearch Indexes and Aliases for iGaming Models
 
 ## 1. Overview

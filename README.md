@@ -1,3 +1,8 @@
+---
+title: "Custom GPT Knowledge Base"
+tags: [root]
+aliases: []
+---
 # Custom GPT Knowledge Base
 
 ## Overview
@@ -16,7 +21,6 @@ custom-gpt-knowledge-base/
 ├─ shared-knowledge/     # Glossary, design patterns, cross-cutting guides
 ├─ guides/               # Supplemental guides (product processes, etc.)
 ├─ gpt-context-guides/   # GPT/retrieval usage guidelines
-├─ index/                # Manifests or index files
 ├─ 90-appendix/          # Diagrams and supplemental visuals
 └─ README.md             # This overview
 ```
@@ -31,7 +35,6 @@ custom-gpt-knowledge-base/
 
 ## Quick Links
 
-- **Knowledge index**: `index/knowledge-index.yaml`
 - **Projects**: `projects/`
 - **Shared glossary**: `shared-knowledge/glossary.md`
 - **Appendix (diagrams & assets)**: `90-appendix/`

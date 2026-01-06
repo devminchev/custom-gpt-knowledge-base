@@ -1,3 +1,8 @@
+---
+title: "GPT Context Guides"
+tags: [gpt-context-guides]
+aliases: []
+---
 # GPT Context Guides
 
 Guidelines for how the GPT should interpret and retrieve knowledge from this repository.

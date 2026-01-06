@@ -1,3 +1,8 @@
+---
+title: "Contentful CMS: IG (iGaming) Content Models & Relationships"
+tags: [projects, advanced-search, current]
+aliases: []
+---
 # Contentful CMS: IG (iGaming) Content Models & Relationships
 
 ## 1) Core Domain Entities

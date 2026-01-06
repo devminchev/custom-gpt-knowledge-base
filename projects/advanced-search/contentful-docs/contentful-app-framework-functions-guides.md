@@ -1,3 +1,8 @@
+---
+title: "1) What the App Framework gives you"
+tags: [projects, advanced-search, contentful-docs]
+aliases: []
+---
 Practical, up-to-date guide to the Contentful App Framework—and especially **App Functions**—covering what they are, when to use them, how to build, deploy, and operate them, plus limits, examples, and gotchas.
 
 # 1) What the App Framework gives you

@@ -1,3 +1,8 @@
+---
+title: "AWS Pipeline Templates – Comprehensive Overview"
+tags: [architecture, aws, aws-pipelines]
+aliases: []
+---
 # AWS Pipeline Templates – Comprehensive Overview
 
 ## Introduction

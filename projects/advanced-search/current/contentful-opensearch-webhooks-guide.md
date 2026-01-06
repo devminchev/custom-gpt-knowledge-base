@@ -1,3 +1,8 @@
+---
+title: "Webhook→Content Type Matrix Config (setup-ready)"
+tags: [projects, advanced-search, current]
+aliases: []
+---
 # Webhook→Content Type Matrix Config (setup-ready)
 
 Below is a precise, build-from-scratch reference for **which webhook handles which Contentful entry types**, the **URL & filters**, **topics by environment**, and the **exact payload shape** each webhook posts into OpenSearch write aliases.

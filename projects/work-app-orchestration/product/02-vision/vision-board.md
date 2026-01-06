@@ -1,3 +1,8 @@
+---
+title: "VISION BOARD – Search Improvements"
+tags: [projects, work-app-orchestration, product, vision]
+aliases: []
+---
 # VISION BOARD – Search Improvements   
 
 ## SEARCH  
