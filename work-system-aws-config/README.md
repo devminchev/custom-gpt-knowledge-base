@@ -4,6 +4,18 @@
 
 This directory is the authoritative snapshot of production AWS service configuration for the work system. It is designed for operational troubleshooting, architecture validation, and onboarding of new product/project teams building on the same AWS stack.
 
+## Verified Structure (Current Repository State)
+
+The current `work-system-aws-config/` tree is organised into five service folders:
+
+1. **API Gateway** (`apigw/`)
+2. **Lambda** (`lambdas/`)
+3. **OpenSearch** (`opensearch/`)
+4. **CloudWatch** (`cloudwatch/`)
+5. **WAF** (`waf/`)
+
+> Verification note: this repository currently does **not** include an `aws/` deployment scripts/environment subtree, `aws-config.md`, or `amazon-ecr-and-ecs-policies-and-roles.md`. If you have those files in another source, treat them as external context and not part of this checked-in knowledge pack.
+
 ## How to Navigate
 
 Start with the service-level reports, then drill into raw JSON exports:
