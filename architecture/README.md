@@ -4,7 +4,15 @@ This folder contains system-wide architecture documentation and infrastructure r
 
 ## Contents
 
-- `aws/` — AWS infrastructure, pipelines, and related documentation.
+- `aws/` — AWS architecture, pipelines, and migration/infrastructure notes.
+
+## Related Production Configuration Source
+
+For raw production configuration snapshots and service-level operational reports, use:
+
+- `../work-system-aws-config/README.md`
+
+Use `architecture/` for design intent and implementation patterns, and `work-system-aws-config/` for observed production state.
 
 ## Notes
 

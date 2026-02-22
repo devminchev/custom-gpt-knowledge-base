@@ -1,5 +1,5 @@
-version: 1
-last_updated: 2025-12-25
+version: 2
+last_updated: 2026-02-22
 sources:
   projects:
     advanced_search:
@@ -30,6 +30,14 @@ sources:
       canonical_docs:
         - architecture/README.md
         - architecture/aws/
+    work_system_aws_config:
+      canonical_docs:
+        - work-system-aws-config/README.md
+        - work-system-aws-config/apigw/apigw-report.md
+        - work-system-aws-config/cloudwatch/cloudwatch-report.md
+        - work-system-aws-config/opensearch/opensearch-technical-report.md
+        - work-system-aws-config/waf/wafv2-web-acl__REGIONAL__waf_lobbycontent-access-001__10878ce3-ed7d-473e-82f1-60ac95613c9a.json
+        - work-system-aws-config/lambdas/
     contentful_models:
       canonical_docs:
         - contentful-models/README.md
@@ -39,11 +47,6 @@ sources:
     contentful_custom_apps:
       canonical_docs:
         - contentful-models/contentful-custom-apps-architecture.md
-    search_pipeline:
-      canonical_docs:
-        - search-pipeline/README.md
-        - search-pipeline/opensearch-index-mapping.json
-        - search-pipeline/contentful-opensearch-schema-guide.md
     cicd:
       canonical_docs:
         - .github/workflows/
