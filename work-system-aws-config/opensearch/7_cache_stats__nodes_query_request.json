@@ -1,0 +1,124 @@
+{
+  "nodes": {
+    "vadJZ9VTRw6r52zUNJI9yw": {
+      "name": "4fd408f3e1356b6da7ea3078350cbf18",
+      "indices": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "Y7YlmNLmTIqxDxBPMGkHqg": {
+      "name": "2612c99ab15acf9f5f76b76938c135d7",
+      "indices": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "V_2FPrsERJGIaxIjWYcY9g": {
+      "name": "29c0c31e36edd2944b72e345350b35c5",
+      "indices": {
+        "query_cache": {
+          "memory_size_in_bytes": 14899609,
+          "total_count": 6219110837,
+          "hit_count": 2177287,
+          "miss_count": 6216933550,
+          "cache_size": 33805,
+          "cache_count": 11039183,
+          "evictions": 11005378
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 312766214,
+          "evictions": 74436763,
+          "hit_count": 208470807,
+          "miss_count": 88455227
+        }
+      }
+    },
+    "6MLYAsLwSfqnVmf9uAizVQ": {
+      "name": "a5d7289b2729c0a489674139b94e1430",
+      "indices": {
+        "query_cache": {
+          "memory_size_in_bytes": 15280704,
+          "total_count": 6291794162,
+          "hit_count": 2305453,
+          "miss_count": 6289488709,
+          "cache_size": 37134,
+          "cache_count": 12782703,
+          "evictions": 12745569
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 270684641,
+          "evictions": 75562569,
+          "hit_count": 208986254,
+          "miss_count": 89217398
+        }
+      }
+    },
+    "gUJARdovQ2iSVX7kxM20xg": {
+      "name": "1a15355bcade17ea49e608355df21e19",
+      "indices": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "EFWOwN_aQciPqBz0gdY_uA": {
+      "name": "891f0bf787b7cf1decffdbbc0c4babe9",
+      "indices": {
+        "query_cache": {
+          "memory_size_in_bytes": 15219368,
+          "total_count": 6291448012,
+          "hit_count": 2257044,
+          "miss_count": 6289190968,
+          "cache_size": 36630,
+          "cache_count": 12589769,
+          "evictions": 12553139
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 323246220,
+          "evictions": 75270346,
+          "hit_count": 210103026,
+          "miss_count": 89697491
+        }
+      }
+    }
+  }
+}

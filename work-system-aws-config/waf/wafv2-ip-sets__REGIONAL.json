@@ -1,0 +1,26 @@
+{
+    "NextMarker": "ipset_lobbycontent-access",
+    "IPSets": [
+        {
+            "Name": "ipset_cloudflare-ips-v4",
+            "Id": "1abe120e-cbb2-4400-b8bf-8076236aa2fa",
+            "Description": "Cloudflare IPv4 ranges - dynamically fetched from https://www.cloudflare.com/ips-v4",
+            "LockToken": "3875d11e-f768-4f33-a90e-df5a3d961df3",
+            "ARN": "arn:aws:wafv2:eu-west-2:658499212567:regional/ipset/ipset_cloudflare-ips-v4/1abe120e-cbb2-4400-b8bf-8076236aa2fa"
+        },
+        {
+            "Name": "ipset_cloudflare-ips-v6",
+            "Id": "781fd909-04e6-416c-ac8d-b64db85831f8",
+            "Description": "Cloudflare IPv6 ranges - dynamically fetched from https://www.cloudflare.com/ips-v6",
+            "LockToken": "c411aeee-8812-42f1-a25f-1692226a95b8",
+            "ARN": "arn:aws:wafv2:eu-west-2:658499212567:regional/ipset/ipset_cloudflare-ips-v6/781fd909-04e6-416c-ac8d-b64db85831f8"
+        },
+        {
+            "Name": "ipset_lobbycontent-access",
+            "Id": "4575286d-746d-4d1b-8579-7bbc3a428c4e",
+            "Description": "Lobby Content WAF IP Set List",
+            "LockToken": "e0b98010-b9c4-4c75-b505-585df2fcd5d6",
+            "ARN": "arn:aws:wafv2:eu-west-2:658499212567:regional/ipset/ipset_lobbycontent-access/4575286d-746d-4d1b-8579-7bbc3a428c4e"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+  "FunctionName": "aws-controltower-NotificationForwarder",
+  "Configured": false,
+  "MaxEventAgeInSeconds": null,
+  "MaximumRetryAttempts": null,
+  "DestinationConfig": null,
+  "Reason": "ResourceNotFoundException: no EventInvokeConfig set"
+}

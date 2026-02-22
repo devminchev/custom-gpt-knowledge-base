@@ -1,0 +1,8 @@
+{
+  "FunctionName": "personalisation-lobby-layouts-ts",
+  "Configured": false,
+  "MaxEventAgeInSeconds": null,
+  "MaximumRetryAttempts": null,
+  "DestinationConfig": null,
+  "Reason": "ResourceNotFoundException: no EventInvokeConfig set"
+}

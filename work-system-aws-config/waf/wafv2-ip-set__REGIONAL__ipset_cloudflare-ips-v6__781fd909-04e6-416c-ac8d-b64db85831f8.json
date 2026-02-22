@@ -1,0 +1,19 @@
+{
+    "IPSet": {
+        "Name": "ipset_cloudflare-ips-v6",
+        "Id": "781fd909-04e6-416c-ac8d-b64db85831f8",
+        "ARN": "arn:aws:wafv2:eu-west-2:658499212567:regional/ipset/ipset_cloudflare-ips-v6/781fd909-04e6-416c-ac8d-b64db85831f8",
+        "Description": "Cloudflare IPv6 ranges - dynamically fetched from https://www.cloudflare.com/ips-v6",
+        "IPAddressVersion": "IPV6",
+        "Addresses": [
+            "2405:b500:0000:0000:0000:0000:0000:0000/32",
+            "2a06:98c0:0000:0000:0000:0000:0000:0000/29",
+            "2c0f:f248:0000:0000:0000:0000:0000:0000/32",
+            "2606:4700:0000:0000:0000:0000:0000:0000/32",
+            "2803:f800:0000:0000:0000:0000:0000:0000/32",
+            "2400:cb00:0000:0000:0000:0000:0000:0000/32",
+            "2405:8100:0000:0000:0000:0000:0000:0000/32"
+        ]
+    },
+    "LockToken": "c411aeee-8812-42f1-a25f-1692226a95b8"
+}

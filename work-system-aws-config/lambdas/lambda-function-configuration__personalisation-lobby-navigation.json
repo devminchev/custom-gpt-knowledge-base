@@ -1,0 +1,45 @@
+{
+    "FunctionName": "personalisation-lobby-navigation",
+    "FunctionArn": "arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-navigation",
+    "Role": "arn:aws:iam::658499212567:role/r_lambda_personalisation-lobby-navigation",
+    "CodeSize": 0,
+    "Description": "Categories Lambda Function using Typescript",
+    "Timeout": 360,
+    "MemorySize": 256,
+    "LastModified": "2026-01-20T12:13:44.000+0000",
+    "CodeSha256": "151bb7650dbf4b6d7dbe8c8d4e0d7235cb5e732b7938788580245b9b9d50f91d",
+    "Version": "$LATEST",
+    "Environment": {
+        "Variables": {
+            "CONTENTFUL_SPACE_LOCALE": "en-GB",
+            "ENABLE_XRAY": "false",
+            "OS_PASS": "xAmM6VD&U66xj5eP",
+            "API_KEY": "",
+            "EXECUTION_ENVIRONMENT": "production",
+            "OS_USER": "personalisation_lobby_lambdas",
+            "HOST": "https://lobbycontent-opsearch.prod.eu00.aws.ballys.tech",
+            "REGION": "EU"
+        }
+    },
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "a8e9529b-b68d-4c9f-9f22-9b551a255d47",
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Image",
+    "Architectures": [
+        "x86_64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/personalisation-lobby-navigation"
+    }
+}

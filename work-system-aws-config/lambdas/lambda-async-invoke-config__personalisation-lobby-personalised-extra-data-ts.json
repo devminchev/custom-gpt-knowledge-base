@@ -1,0 +1,8 @@
+{
+  "FunctionName": "personalisation-lobby-personalised-extra-data-ts",
+  "Configured": false,
+  "MaxEventAgeInSeconds": null,
+  "MaximumRetryAttempts": null,
+  "DestinationConfig": null,
+  "Reason": "ResourceNotFoundException: no EventInvokeConfig set"
+}

@@ -1,0 +1,45 @@
+{
+    "FunctionName": "personalisation-lobby-mini-games",
+    "FunctionArn": "arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-mini-games",
+    "Role": "arn:aws:iam::658499212567:role/r_lambda_personalisation-lobby-mini-games",
+    "CodeSize": 0,
+    "Description": "Mini Games Lambda Function using Typescript",
+    "Timeout": 360,
+    "MemorySize": 256,
+    "LastModified": "2026-01-20T12:13:38.000+0000",
+    "CodeSha256": "c83878c57d7ae26027d28e625773af805fbd3b35affdf708f5f37699d8b50afc",
+    "Version": "$LATEST",
+    "Environment": {
+        "Variables": {
+            "CONTENTFUL_SPACE_LOCALE": "en-GB",
+            "ENABLE_XRAY": "false",
+            "OS_PASS": "xAmM6VD&U66xj5eP",
+            "API_KEY": "",
+            "EXECUTION_ENVIRONMENT": "production",
+            "OS_USER": "personalisation_lobby_lambdas",
+            "HOST": "https://lobbycontent-opsearch.prod.eu00.aws.ballys.tech",
+            "REGION": "EU"
+        }
+    },
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "1c8438fc-bc7f-4952-a4ec-62075ecf46e4",
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Image",
+    "Architectures": [
+        "x86_64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/personalisation-lobby-mini-games"
+    }
+}

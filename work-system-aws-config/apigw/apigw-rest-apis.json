@@ -1,0 +1,134 @@
+{
+    "items": [
+        {
+            "id": "25s65e3wn9",
+            "name": "lobby-v2",
+            "description": "Personalisation Lobby OpenAPI",
+            "createdDate": "2025-04-02T16:18:16+01:00",
+            "version": "2.0",
+            "apiKeySource": "HEADER",
+            "endpointConfiguration": {
+                "types": [
+                    "REGIONAL"
+                ],
+                "ipAddressType": "ipv4"
+            },
+            "tags": {
+                "map-migrated": "mig9N7YJ8QM5D",
+                "ops:environment": "prod",
+                "ops:managed-by": "terraform",
+                "ops:platform": "Excite",
+                "ops:region": "eu-west-2",
+                "ops:status": "live-hidden",
+                "ops:tf_module": "terraform-aws-api-gateway",
+                "ops:tfe_workspace": "terraform-aws-excite-prod-eu00",
+                "org:business-area": "Excite Development",
+                "org:department": "Excite Platform",
+                "org:division": "Technology",
+                "org:team": "Excite Platform Engineering",
+                "sec:data-classification": "private",
+                "sec:regulated": "true",
+                "sec:territory": "EU"
+            },
+            "disableExecuteApiEndpoint": true,
+            "rootResourceId": "ujj6yvtog7"
+        },
+        {
+            "id": "b68dvu4ohl",
+            "name": "lobby-v1",
+            "description": "Personalisation Lobby OpenAPI",
+            "createdDate": "2024-07-30T12:55:30+01:00",
+            "version": "1.0",
+            "apiKeySource": "HEADER",
+            "endpointConfiguration": {
+                "types": [
+                    "REGIONAL"
+                ]
+            },
+            "tags": {
+                "map-migrated": "mig9N7YJ8QM5D",
+                "ops:environment": "prod",
+                "ops:managed-by": "terraform",
+                "ops:platform": "Excite",
+                "ops:region": "eu-west-2",
+                "ops:status": "live-hidden",
+                "ops:tf_module": "terraform-aws-api-gateway",
+                "ops:tfe_workspace": "terraform-aws-excite-prod-eu00",
+                "org:business-area": "Excite Development",
+                "org:department": "Excite Platform",
+                "org:division": "Technology",
+                "org:team": "Excite Platform Engineering",
+                "sec:data-classification": "private",
+                "sec:regulated": "true",
+                "sec:territory": "EU"
+            },
+            "disableExecuteApiEndpoint": true,
+            "rootResourceId": "xnsr8dxogc"
+        },
+        {
+            "id": "d11zpyjer5",
+            "name": "backoffice-v2",
+            "description": "Back Office OpenAPI",
+            "createdDate": "2025-04-04T15:52:26+01:00",
+            "version": "1.0",
+            "apiKeySource": "HEADER",
+            "endpointConfiguration": {
+                "types": [
+                    "REGIONAL"
+                ],
+                "ipAddressType": "ipv4"
+            },
+            "tags": {
+                "map-migrated": "mig9N7YJ8QM5D",
+                "ops:environment": "prod",
+                "ops:managed-by": "terraform",
+                "ops:platform": "Excite",
+                "ops:region": "eu-west-2",
+                "ops:status": "live-hidden",
+                "ops:tf_module": "terraform-aws-api-gateway",
+                "ops:tfe_workspace": "terraform-aws-excite-prod-eu00",
+                "org:business-area": "Excite Development",
+                "org:department": "Excite Platform",
+                "org:division": "Technology",
+                "org:team": "Excite Platform Engineering",
+                "sec:data-classification": "private",
+                "sec:regulated": "true",
+                "sec:territory": "EU"
+            },
+            "disableExecuteApiEndpoint": true,
+            "rootResourceId": "5dcxsz1ex5"
+        },
+        {
+            "id": "qgo25v8kfa",
+            "name": "backoffice-v1",
+            "description": "Back Office OpenAPI",
+            "createdDate": "2025-02-13T08:47:40+00:00",
+            "version": "1.0",
+            "apiKeySource": "HEADER",
+            "endpointConfiguration": {
+                "types": [
+                    "REGIONAL"
+                ]
+            },
+            "tags": {
+                "map-migrated": "mig9N7YJ8QM5D",
+                "ops:environment": "prod",
+                "ops:managed-by": "terraform",
+                "ops:platform": "Excite",
+                "ops:region": "eu-west-2",
+                "ops:status": "live-hidden",
+                "ops:tf_module": "terraform-aws-api-gateway",
+                "ops:tfe_workspace": "terraform-aws-excite-prod-eu00",
+                "org:business-area": "Excite Development",
+                "org:department": "Excite Platform",
+                "org:division": "Technology",
+                "org:team": "Excite Platform Engineering",
+                "sec:data-classification": "private",
+                "sec:regulated": "true",
+                "sec:territory": "EU"
+            },
+            "disableExecuteApiEndpoint": true,
+            "rootResourceId": "0388xvxtr2"
+        }
+    ]
+}

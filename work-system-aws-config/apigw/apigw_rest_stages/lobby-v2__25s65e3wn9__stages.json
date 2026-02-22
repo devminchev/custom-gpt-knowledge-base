@@ -1,0 +1,110 @@
+{
+    "item": [
+        {
+            "deploymentId": "ocwnye",
+            "stageName": "v2",
+            "cacheClusterEnabled": true,
+            "cacheClusterSize": "0.5",
+            "cacheClusterStatus": "AVAILABLE",
+            "methodSettings": {
+                "*/*": {
+                    "metricsEnabled": false,
+                    "loggingLevel": "OFF",
+                    "dataTraceEnabled": false,
+                    "throttlingBurstLimit": 10000,
+                    "throttlingRateLimit": 8000.0,
+                    "cachingEnabled": true,
+                    "cacheTtlInSeconds": 300,
+                    "cacheDataEncrypted": false,
+                    "requireAuthorizationForCacheControl": true,
+                    "unauthorizedCacheControlHeaderStrategy": "FAIL_WITH_403"
+                },
+                "~1sites~1{sitename}~1game-titles/GET": {
+                    "metricsEnabled": false,
+                    "loggingLevel": "OFF",
+                    "dataTraceEnabled": false,
+                    "throttlingBurstLimit": 10000,
+                    "throttlingRateLimit": 8000.0,
+                    "cachingEnabled": true,
+                    "cacheTtlInSeconds": 3600,
+                    "cacheDataEncrypted": false,
+                    "requireAuthorizationForCacheControl": true,
+                    "unauthorizedCacheControlHeaderStrategy": "FAIL_WITH_403"
+                },
+                "~1sites~1{sitename}~1memberid~1{memberid}~1variant/GET": {
+                    "metricsEnabled": false,
+                    "loggingLevel": "OFF",
+                    "dataTraceEnabled": false,
+                    "throttlingBurstLimit": 10000,
+                    "throttlingRateLimit": 8000.0,
+                    "cachingEnabled": true,
+                    "cacheTtlInSeconds": 3600,
+                    "cacheDataEncrypted": false,
+                    "requireAuthorizationForCacheControl": true,
+                    "unauthorizedCacheControlHeaderStrategy": "FAIL_WITH_403"
+                },
+                "~1sites~1{sitename}~1platform~1{platform}~1get-bulk-game-data/GET": {
+                    "metricsEnabled": false,
+                    "loggingLevel": "OFF",
+                    "dataTraceEnabled": false,
+                    "throttlingBurstLimit": 10000,
+                    "throttlingRateLimit": 8000.0,
+                    "cachingEnabled": true,
+                    "cacheTtlInSeconds": 3600,
+                    "cacheDataEncrypted": false,
+                    "requireAuthorizationForCacheControl": true,
+                    "unauthorizedCacheControlHeaderStrategy": "FAIL_WITH_403"
+                },
+                "~1sites~1{sitename}~1platform~1{platform}~1minigames/GET": {
+                    "metricsEnabled": false,
+                    "loggingLevel": "OFF",
+                    "dataTraceEnabled": false,
+                    "throttlingBurstLimit": 10000,
+                    "throttlingRateLimit": 8000.0,
+                    "cachingEnabled": true,
+                    "cacheTtlInSeconds": 3600,
+                    "cacheDataEncrypted": false,
+                    "requireAuthorizationForCacheControl": true,
+                    "unauthorizedCacheControlHeaderStrategy": "FAIL_WITH_403"
+                },
+                "~1sites~1{sitename}~1platform~1{platform}~1search/GET": {
+                    "metricsEnabled": false,
+                    "loggingLevel": "OFF",
+                    "dataTraceEnabled": false,
+                    "throttlingBurstLimit": 10000,
+                    "throttlingRateLimit": 8000.0,
+                    "cachingEnabled": true,
+                    "cacheTtlInSeconds": 900,
+                    "cacheDataEncrypted": false,
+                    "requireAuthorizationForCacheControl": true,
+                    "unauthorizedCacheControlHeaderStrategy": "FAIL_WITH_403"
+                }
+            },
+            "accessLogSettings": {
+                "format": "$context.identity.sourceIp [$context.requestTime] \"$context.httpMethod $context.path $context.protocol\" $context.status $context.responseLength $context.responseLatency \"$context.domainName/$context.customDomain.basePathMatched\" \"$context.identity.userAgent\"; AWSLambda-Status=$context.integrationStatus;  LambdaCode-Status=$context.integration.status; Integration-Latency=$context.integrationLatency; WAF-Response=$context.wafResponseCode; $context.requestId\n",
+                "destinationArn": "arn:aws:logs:eu-west-2:658499212567:log-group:API-Gateway-Custom-Access-Logs_lobby-v2"
+            },
+            "tracingEnabled": false,
+            "webAclArn": "arn:aws:wafv2:eu-west-2:658499212567:regional/webacl/waf_lobbycontent-access-001/10878ce3-ed7d-473e-82f1-60ac95613c9a",
+            "tags": {
+                "map-migrated": "mig9N7YJ8QM5D",
+                "ops:environment": "prod",
+                "ops:managed-by": "terraform",
+                "ops:platform": "Excite",
+                "ops:region": "eu-west-2",
+                "ops:status": "live-hidden",
+                "ops:tf_module": "terraform-aws-api-gateway",
+                "ops:tfe_workspace": "terraform-aws-excite-prod-eu00",
+                "org:business-area": "Excite Development",
+                "org:department": "Excite Platform",
+                "org:division": "Technology",
+                "org:team": "Excite Platform Engineering",
+                "sec:data-classification": "private",
+                "sec:regulated": "true",
+                "sec:territory": "EU"
+            },
+            "createdDate": "2025-04-02T16:35:40+01:00",
+            "lastUpdatedDate": "2026-01-14T10:02:09+00:00"
+        }
+    ]
+}

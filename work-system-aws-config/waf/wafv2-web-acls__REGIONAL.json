@@ -1,0 +1,12 @@
+{
+    "NextMarker": "waf_lobbycontent-access-001",
+    "WebACLs": [
+        {
+            "Name": "waf_lobbycontent-access-001",
+            "Id": "10878ce3-ed7d-473e-82f1-60ac95613c9a",
+            "Description": "Lobby Content WAF ACL #001",
+            "LockToken": "3c8e067b-3362-4043-a7f3-e39988fce8bf",
+            "ARN": "arn:aws:wafv2:eu-west-2:658499212567:regional/webacl/waf_lobbycontent-access-001/10878ce3-ed7d-473e-82f1-60ac95613c9a"
+        }
+    ]
+}

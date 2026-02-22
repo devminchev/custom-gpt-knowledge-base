@@ -1,0 +1,1673 @@
+{
+  "_shards": {
+    "total": 240,
+    "successful": 240,
+    "failed": 0
+  },
+  "_all": {
+    "primaries": {
+      "query_cache": {
+        "memory_size_in_bytes": 14924105,
+        "total_count": 6290138089,
+        "hit_count": 2270040,
+        "miss_count": 6287868049,
+        "cache_size": 35281,
+        "cache_count": 12037514,
+        "evictions": 12002233
+      },
+      "request_cache": {
+        "memory_size_in_bytes": 300222439,
+        "evictions": 75243101,
+        "hit_count": 208972500,
+        "miss_count": 89049382
+      }
+    },
+    "total": {
+      "query_cache": {
+        "memory_size_in_bytes": 45409705,
+        "total_count": 18801904744,
+        "hit_count": 6739375,
+        "miss_count": 18795165369,
+        "cache_size": 107643,
+        "cache_count": 36411024,
+        "evictions": 36303381
+      },
+      "request_cache": {
+        "memory_size_in_bytes": 901078942,
+        "evictions": 225269574,
+        "hit_count": 627546780,
+        "miss_count": 267363099
+      }
+    }
+  },
+  "indices": {
+    ".plugins-ml-model-group": {
+      "uuid": "_zl6m2uIQ_KpdXL_mozBRA",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "personalised-sections": {
+      "uuid": "yYWUWYWxSqmfFdVNczxVLg",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 57,
+          "hit_count": 6,
+          "miss_count": 57
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 141,
+          "hit_count": 10,
+          "miss_count": 141
+        }
+      }
+    },
+    "game-sections": {
+      "uuid": "waxEtMS6ReaonS76UU8ZEQ",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 518320,
+          "evictions": 253681,
+          "hit_count": 23123821,
+          "miss_count": 714275
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 6516361,
+          "evictions": 756241,
+          "hit_count": 69244846,
+          "miss_count": 2126103
+        }
+      }
+    },
+    ".ql-datasources": {
+      "uuid": "eizq-AtYSXqhhHk-DlBVyg",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "vitruvian-ai-games-similarity-v1": {
+      "uuid": "TIYp0gFFSXeiMhEq6ULdGg",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 5519310,
+          "evictions": 684466,
+          "hit_count": 8138372,
+          "miss_count": 814506
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 16595128,
+          "evictions": 2051579,
+          "hit_count": 24416412,
+          "miss_count": 2442086
+        }
+      }
+    },
+    "vitruvian-ai-because-you-played-z-recommendations-v1": {
+      "uuid": "wU72BrA-SOSgybkdhRF77w",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 4964725,
+          "total_count": 26929765,
+          "hit_count": 180696,
+          "miss_count": 26749069,
+          "cache_size": 11851,
+          "cache_count": 3853645,
+          "evictions": 3841794
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 57159636,
+          "evictions": 12035147,
+          "hit_count": 1823352,
+          "miss_count": 12995974
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 15342404,
+          "total_count": 81246215,
+          "hit_count": 553691,
+          "miss_count": 80692524,
+          "cache_size": 36542,
+          "cache_count": 11687242,
+          "evictions": 11650700
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 171497733,
+          "evictions": 36100631,
+          "hit_count": 5471637,
+          "miss_count": 38983871
+        }
+      }
+    },
+    "ml-game-shuffle": {
+      "uuid": "bKADvsTtQ7eJ05EN2EQABA",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 4,
+          "hit_count": 0,
+          "miss_count": 4
+        }
+      }
+    },
+    "vitruvian-ai-because-you-played-y-recommendations-v1": {
+      "uuid": "vlzEs9hOQ4qIrdNtT8elWQ",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 7159993,
+          "total_count": 23857279,
+          "hit_count": 164929,
+          "miss_count": 23692350,
+          "cache_size": 17071,
+          "cache_count": 3634144,
+          "evictions": 3617073
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 61333892,
+          "evictions": 12938059,
+          "hit_count": 1978240,
+          "miss_count": 13971610
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 21539714,
+          "total_count": 72179986,
+          "hit_count": 504143,
+          "miss_count": 71675843,
+          "cache_size": 51732,
+          "cache_count": 11040570,
+          "evictions": 10988838
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 183969892,
+          "evictions": 38814608,
+          "hit_count": 5933101,
+          "miss_count": 41915300
+        }
+      }
+    },
+    ".plugins-ml-task": {
+      "uuid": "Jhq3SG42QiapOS1QDbHLrg",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "ml-personalised-sections-defaults": {
+      "uuid": "uFhto3EITsq2XjQ6SXVl-Q",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 10121,
+          "evictions": 153,
+          "hit_count": 20729004,
+          "miss_count": 166
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 30363,
+          "evictions": 437,
+          "hit_count": 64023078,
+          "miss_count": 476
+        }
+      }
+    },
+    "vitruvian-ai-because-you-played-x-recommendations-v1": {
+      "uuid": "eAeQW1nbTQyZxzcV42ElWA",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 2775626,
+          "total_count": 29839190,
+          "hit_count": 208508,
+          "miss_count": 29630682,
+          "cache_size": 6301,
+          "cache_count": 4542333,
+          "evictions": 4536032
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 59320817,
+          "evictions": 12658464,
+          "hit_count": 2097331,
+          "miss_count": 13594466
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 8446518,
+          "total_count": 89450981,
+          "hit_count": 625988,
+          "miss_count": 88824993,
+          "cache_size": 19186,
+          "cache_count": 13662346,
+          "evictions": 13643160
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 177989210,
+          "evictions": 37967125,
+          "hit_count": 6296256,
+          "miss_count": 40775317
+        }
+      }
+    },
+    "layouts": {
+      "uuid": "dn_oWsJFSR-1gSUsRaZYig",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 60,
+          "hit_count": 2,
+          "miss_count": 60
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 166,
+          "hit_count": 5,
+          "miss_count": 166
+        }
+      }
+    },
+    ".opendistro_security": {
+      "uuid": "TGreK3FLSwGWSGnkxbrLng",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "games-archived-v2": {
+      "uuid": "Kyp3XTrVQm683kI_Lh9Uvg",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 1468,
+          "evictions": 1263,
+          "hit_count": 310,
+          "miss_count": 1704
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 5112,
+          "evictions": 3970,
+          "hit_count": 1040,
+          "miss_count": 5256
+        }
+      }
+    },
+    "ml-personalised-sections": {
+      "uuid": "xuvIzTmWSaabDWMFx2IVUw",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 4255083,
+          "evictions": 287261,
+          "hit_count": 23547411,
+          "miss_count": 290937
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 13045312,
+          "evictions": 854581,
+          "hit_count": 70499700,
+          "miss_count": 865875
+        }
+      }
+    },
+    "marketing-sections": {
+      "uuid": "vjQLLnHfQkWlIZRm11C2bA",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 2167567,
+          "evictions": 239208,
+          "hit_count": 23306846,
+          "miss_count": 530886
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 8525763,
+          "evictions": 713238,
+          "hit_count": 69805014,
+          "miss_count": 1564716
+        }
+      }
+    },
+    "themes": {
+      "uuid": "d9KerVRYTfmIYEB_eqPNmQ",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "games-v2": {
+      "uuid": "AxbhNj_5TV2md8F7L96xSw",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 18489,
+          "total_count": 6146499722,
+          "hit_count": 1714384,
+          "miss_count": 6144785338,
+          "cache_size": 46,
+          "cache_count": 661,
+          "evictions": 615
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 6235987,
+          "evictions": 12888551,
+          "hit_count": 18391458,
+          "miss_count": 19312562
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 67629,
+          "total_count": 18380660803,
+          "hit_count": 5051528,
+          "miss_count": 18375609275,
+          "cache_size": 152,
+          "cache_count": 2107,
+          "evictions": 1955
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 13231864,
+          "evictions": 38208174,
+          "hit_count": 54742238,
+          "miss_count": 58187124
+        }
+      }
+    },
+    ".opensearch-observability": {
+      "uuid": "tgBpg8OWQDKRITLKBaDTxw",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "navigation": {
+      "uuid": "CStg-vpQTt6me5sM_1w4ug",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 4411079,
+          "evictions": 275774,
+          "hit_count": 28685634,
+          "miss_count": 279564
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 13472810,
+          "evictions": 819931,
+          "hit_count": 85887785,
+          "miss_count": 831516
+        }
+      }
+    },
+    ".plugins-ml-model": {
+      "uuid": "oRPI2l6nSRavys6PbjeTxQ",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 1435,
+          "evictions": 24,
+          "hit_count": 5014,
+          "miss_count": 30
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 4305,
+          "evictions": 86,
+          "hit_count": 14944,
+          "miss_count": 100
+        }
+      }
+    },
+    ".kibana_264559204_contentful_1": {
+      "uuid": "_mgIl2t8ThW9AwIlTiXmsw",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "games-archived": {
+      "uuid": "e1bMxjw9QLWQAQxbsEOT8w",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 53,
+          "hit_count": 10,
+          "miss_count": 53
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 130,
+          "hit_count": 21,
+          "miss_count": 130
+        }
+      }
+    },
+    "ml-recently-played": {
+      "uuid": "S9aJNTEGS26Hzu2ppv_4UQ",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 10595967,
+          "hit_count": 0,
+          "miss_count": 10595967,
+          "cache_size": 0,
+          "cache_count": 204,
+          "evictions": 204
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 10916526,
+          "evictions": 2281964,
+          "hit_count": 313820,
+          "miss_count": 2484837
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 32733242,
+          "hit_count": 5,
+          "miss_count": 32733237,
+          "cache_size": 0,
+          "cache_count": 560,
+          "evictions": 560
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 30730481,
+          "evictions": 6898662,
+          "hit_count": 946305,
+          "miss_count": 7501314
+        }
+      }
+    },
+    "games": {
+      "uuid": "a6t_CtZFRxinUBATEoYD5Q",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 2598,
+          "total_count": 98543,
+          "hit_count": 879,
+          "miss_count": 97664,
+          "cache_size": 6,
+          "cache_count": 193,
+          "evictions": 187
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 1812,
+          "hit_count": 209,
+          "miss_count": 2554
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 5247,
+          "total_count": 267520,
+          "hit_count": 2298,
+          "miss_count": 265222,
+          "cache_size": 12,
+          "cache_count": 559,
+          "evictions": 547
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 5371,
+          "hit_count": 631,
+          "miss_count": 7502
+        }
+      }
+    },
+    "categories": {
+      "uuid": "jAFFDD4KT3O4LTa-M8MABg",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 4776,
+          "evictions": 603,
+          "hit_count": 225,
+          "miss_count": 607
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 18933,
+          "evictions": 1866,
+          "hit_count": 681,
+          "miss_count": 1881
+        }
+      }
+    },
+    "views": {
+      "uuid": "DZPmv-AuRPOgFCor_8kFsg",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 860553,
+          "evictions": 91087,
+          "hit_count": 5430209,
+          "miss_count": 121105
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 2806850,
+          "evictions": 272109,
+          "hit_count": 16248736,
+          "miss_count": 368802
+        }
+      }
+    },
+    ".kibana_3506402_root_1": {
+      "uuid": "JlZse8LwQyWHL4KWsigDFA",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    ".plugins-flow-framework-state": {
+      "uuid": "yByIfwcDQEqbG7jlVkNKtw",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 33480,
+          "evictions": 557,
+          "hit_count": 122228,
+          "miss_count": 602
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 100440,
+          "evictions": 1655,
+          "hit_count": 367774,
+          "miss_count": 1790
+        }
+      }
+    },
+    ".plugins-ml-agent": {
+      "uuid": "Dc7_WhJ3Qg2EQTpOEptIuA",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    ".plugins-flow-framework-templates": {
+      "uuid": "EF61mxZiRTG1hgDKiXfMEw",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "ab-variants": {
+      "uuid": "S2YiL9ZMRfqdHxMrFVdrgw",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    ".kibana_1": {
+      "uuid": "PyOrA1qORUqSh4wqmATivQ",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "ventures": {
+      "uuid": "HbFygEjqTbWhrOPDCfLS5Q",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 5948,
+          "evictions": 2,
+          "hit_count": 39528027,
+          "miss_count": 10
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 17844,
+          "evictions": 8,
+          "hit_count": 118392485,
+          "miss_count": 32
+        }
+      }
+    },
+    "sections": {
+      "uuid": "Tc6GjpzzSLOo9CEBXKQn4A",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 108,
+          "hit_count": 4,
+          "miss_count": 108
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 281,
+          "hit_count": 11,
+          "miss_count": 285
+        }
+      }
+    },
+    ".tasks": {
+      "uuid": "ah0Sh7d0RReraM-6xDl-Qw",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "vitruvian-ml-eu-games-recommender-content-based-recommendations-v1": {
+      "uuid": "N22vOWPVT3CQUnX8SJI1gQ",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 6,
+          "hit_count": 0,
+          "miss_count": 6,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 4,
+          "hit_count": 0,
+          "miss_count": 4
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 20,
+          "hit_count": 0,
+          "miss_count": 20,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 15,
+          "hit_count": 0,
+          "miss_count": 15
+        }
+      }
+    },
+    ".plugins-ml-config": {
+      "uuid": "8imdMC6BR_K-dgIt6CHR7Q",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "personalisation-defaults": {
+      "uuid": "jqViOmnSSCyXPcAuBNXA_w",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 3,
+          "hit_count": 0,
+          "miss_count": 3
+        }
+      }
+    },
+    "migrations": {
+      "uuid": "Srpd_vPHRpiBqO7gziPyDw",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    ".plugins-flow-framework-config": {
+      "uuid": "bPPBWk1nSQysMn-3Uz-4sQ",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    ".plugins-ml-stop-words": {
+      "uuid": "pyf86HG-QlukfQxOrr7Kmg",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    },
+    "vitruvian-ml-eu-games-recommender-v2": {
+      "uuid": "CIBTxFABRFeBB33oig7F6A",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 2674,
+          "total_count": 52317617,
+          "hit_count": 644,
+          "miss_count": 52316973,
+          "cache_size": 6,
+          "cache_count": 6334,
+          "evictions": 6328
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 87466441,
+          "evictions": 20604743,
+          "hit_count": 11750967,
+          "miss_count": 23932705
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 8193,
+          "total_count": 145365977,
+          "hit_count": 1722,
+          "miss_count": 145364255,
+          "cache_size": 19,
+          "cache_count": 17640,
+          "evictions": 17621
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 262520541,
+          "evictions": 61798562,
+          "hit_count": 35254070,
+          "miss_count": 71783294
+        }
+      }
+    },
+    ".opendistro-job-scheduler-lock": {
+      "uuid": "ZSm67yeuSNeogbK5OrV9TQ",
+      "primaries": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      },
+      "total": {
+        "query_cache": {
+          "memory_size_in_bytes": 0,
+          "total_count": 0,
+          "hit_count": 0,
+          "miss_count": 0,
+          "cache_size": 0,
+          "cache_count": 0,
+          "evictions": 0
+        },
+        "request_cache": {
+          "memory_size_in_bytes": 0,
+          "evictions": 0,
+          "hit_count": 0,
+          "miss_count": 0
+        }
+      }
+    }
+  }
+}

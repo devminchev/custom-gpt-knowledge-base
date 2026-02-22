@@ -1,0 +1,5 @@
+{
+    "DashboardArn": "arn:aws:cloudwatch::658499212567:dashboard/opensearch-nick",
+    "DashboardBody": "{\"widgets\":[]}",
+    "DashboardName": "opensearch-nick"
+}

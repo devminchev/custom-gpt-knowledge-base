@@ -1,0 +1,106 @@
+{
+    "WebACL": {
+        "Name": "waf_lobbycontent-access-001",
+        "Id": "10878ce3-ed7d-473e-82f1-60ac95613c9a",
+        "ARN": "arn:aws:wafv2:eu-west-2:658499212567:regional/webacl/waf_lobbycontent-access-001/10878ce3-ed7d-473e-82f1-60ac95613c9a",
+        "DefaultAction": {
+            "Block": {}
+        },
+        "Description": "Lobby Content WAF ACL #001",
+        "Rules": [
+            {
+                "Name": "rule_allow_ipset",
+                "Priority": 0,
+                "Statement": {
+                    "IPSetReferenceStatement": {
+                        "ARN": "arn:aws:wafv2:eu-west-2:658499212567:regional/ipset/ipset_lobbycontent-access/4575286d-746d-4d1b-8579-7bbc3a428c4e"
+                    }
+                },
+                "Action": {
+                    "Allow": {}
+                },
+                "VisibilityConfig": {
+                    "SampledRequestsEnabled": false,
+                    "CloudWatchMetricsEnabled": true,
+                    "MetricName": "waf_lobbycontent-access-001_rule_allow_ipset"
+                }
+            },
+            {
+                "Name": "rule_allow_lobby_cdn",
+                "Priority": 1,
+                "Statement": {
+                    "ByteMatchStatement": {
+                        "SearchString": "djNsUXc3bzh1cko0R1U0NA==",
+                        "FieldToMatch": {
+                            "SingleHeader": {
+                                "Name": "x-origin-cdn"
+                            }
+                        },
+                        "TextTransformations": [
+                            {
+                                "Priority": 0,
+                                "Type": "NONE"
+                            }
+                        ],
+                        "PositionalConstraint": "EXACTLY"
+                    }
+                },
+                "Action": {
+                    "Allow": {}
+                },
+                "VisibilityConfig": {
+                    "SampledRequestsEnabled": false,
+                    "CloudWatchMetricsEnabled": true,
+                    "MetricName": "waf_lobbycontent-access-001_rule_allow_lobby_cdn"
+                }
+            },
+            {
+                "Name": "rule_allow_cloudflare_v4",
+                "Priority": 2,
+                "Statement": {
+                    "IPSetReferenceStatement": {
+                        "ARN": "arn:aws:wafv2:eu-west-2:658499212567:regional/ipset/ipset_cloudflare-ips-v4/1abe120e-cbb2-4400-b8bf-8076236aa2fa"
+                    }
+                },
+                "Action": {
+                    "Allow": {}
+                },
+                "VisibilityConfig": {
+                    "SampledRequestsEnabled": false,
+                    "CloudWatchMetricsEnabled": true,
+                    "MetricName": "waf_lobbycontent-access-001_rule_allow_cloudflare_v4"
+                }
+            },
+            {
+                "Name": "rule_allow_cloudflare_v6",
+                "Priority": 3,
+                "Statement": {
+                    "IPSetReferenceStatement": {
+                        "ARN": "arn:aws:wafv2:eu-west-2:658499212567:regional/ipset/ipset_cloudflare-ips-v6/781fd909-04e6-416c-ac8d-b64db85831f8"
+                    }
+                },
+                "Action": {
+                    "Allow": {}
+                },
+                "VisibilityConfig": {
+                    "SampledRequestsEnabled": false,
+                    "CloudWatchMetricsEnabled": true,
+                    "MetricName": "waf_lobbycontent-access-001_rule_allow_cloudflare_v6"
+                }
+            }
+        ],
+        "VisibilityConfig": {
+            "SampledRequestsEnabled": false,
+            "CloudWatchMetricsEnabled": true,
+            "MetricName": "waf_lobbycontent-access-001"
+        },
+        "Capacity": 5,
+        "ManagedByFirewallManager": false,
+        "LabelNamespace": "awswaf:658499212567:webacl:waf_lobbycontent-access-001:",
+        "RetrofittedByFirewallManager": false,
+        "OnSourceDDoSProtectionConfig": {
+            "ALBLowReputationMode": "ACTIVE_UNDER_DDOS"
+        }
+    },
+    "LockToken": "3c8e067b-3362-4043-a7f3-e39988fce8bf"
+}

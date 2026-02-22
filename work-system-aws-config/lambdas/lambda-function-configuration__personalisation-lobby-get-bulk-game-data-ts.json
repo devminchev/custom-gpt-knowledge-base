@@ -1,0 +1,56 @@
+{
+    "FunctionName": "personalisation-lobby-get-bulk-game-data-ts",
+    "FunctionArn": "arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-get-bulk-game-data-ts",
+    "Runtime": "nodejs20.x",
+    "Role": "arn:aws:iam::658499212567:role/r_lambda_personalisation-lobby-get-bulk-game-data-ts",
+    "Handler": "app.lambdaHandler",
+    "CodeSize": 1868,
+    "Description": "Get Bulk Game Data Lambda Function using Typescript",
+    "Timeout": 360,
+    "MemorySize": 256,
+    "LastModified": "2025-07-29T12:24:00.000+0000",
+    "CodeSha256": "29nqBvov60tZrkcBptoJoX1IpvHG2lJjWRaEpjF9iZk=",
+    "Version": "$LATEST",
+    "Environment": {
+        "Variables": {
+            "CONTENTFUL_SPACE_LOCALE": "en-GB",
+            "ENABLE_XRAY": "false",
+            "OS_PASS": "xAmM6VD&U66xj5eP",
+            "API_KEY": "",
+            "EXECUTION_ENVIRONMENT": "production",
+            "OS_USER": "personalisation_lobby_lambdas",
+            "HOST": "https://lobbycontent-opsearch.prod.eu00.aws.ballys.tech",
+            "REGION": "EU"
+        }
+    },
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "771e8ef6-8f5c-40b9-a604-d3d050fb84be",
+    "Layers": [
+        {
+            "Arn": "arn:aws:lambda:eu-west-2:658499212567:layer:os-client:36",
+            "CodeSize": 27827502
+        }
+    ],
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "x86_64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:eu-west-2::runtime:dd206d5c0479b082438417cc6b87731a870d3c7d4c6f2375bbacade0b935398d"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/personalisation-lobby-get-bulk-game-data-ts"
+    }
+}

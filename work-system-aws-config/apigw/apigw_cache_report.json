@@ -1,0 +1,44 @@
+[
+  {
+    "api_file": "backoffice-v1__qgo25v8kfa__stages.json",
+    "stageName": "v1",
+    "cacheClusterEnabled": false,
+    "cacheClusterSize": null,
+    "methodSettingsKeys": []
+  },
+  {
+    "api_file": "backoffice-v2__d11zpyjer5__stages.json",
+    "stageName": "v2",
+    "cacheClusterEnabled": false,
+    "cacheClusterSize": null,
+    "methodSettingsKeys": []
+  },
+  {
+    "api_file": "lobby-v1__b68dvu4ohl__stages.json",
+    "stageName": "v1",
+    "cacheClusterEnabled": true,
+    "cacheClusterSize": "0.5",
+    "methodSettingsKeys": [
+      "*/*",
+      "~1sites~1{sitename}~1game-titles/GET",
+      "~1sites~1{sitename}~1historic-game-titles/GET",
+      "~1sites~1{sitename}~1platform~1{platform}~1get-bulk-game-data/GET",
+      "~1sites~1{sitename}~1platform~1{platform}~1minigames/GET",
+      "~1sites~1{sitename}~1platform~1{platform}~1search/GET"
+    ]
+  },
+  {
+    "api_file": "lobby-v2__25s65e3wn9__stages.json",
+    "stageName": "v2",
+    "cacheClusterEnabled": true,
+    "cacheClusterSize": "0.5",
+    "methodSettingsKeys": [
+      "*/*",
+      "~1sites~1{sitename}~1game-titles/GET",
+      "~1sites~1{sitename}~1memberid~1{memberid}~1variant/GET",
+      "~1sites~1{sitename}~1platform~1{platform}~1get-bulk-game-data/GET",
+      "~1sites~1{sitename}~1platform~1{platform}~1minigames/GET",
+      "~1sites~1{sitename}~1platform~1{platform}~1search/GET"
+    ]
+  }
+]

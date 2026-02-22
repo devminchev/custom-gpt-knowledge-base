@@ -1,0 +1,7 @@
+{
+  "webAclName": "waf_lobbycontent-access-001",
+  "webAclId": "10878ce3-ed7d-473e-82f1-60ac95613c9a",
+  "scope": "REGIONAL",
+  "hasRateBasedRules": false,
+  "rateBasedRules": []
+}

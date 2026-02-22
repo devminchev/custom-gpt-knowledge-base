@@ -1,0 +1,878 @@
+{
+    "items": [
+        {
+            "id": "09t0d7",
+            "parentId": "wm1lzh",
+            "pathPart": "search",
+            "path": "/sites/{sitename}/platform/{platform}/search",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.platform": true,
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.auth": false,
+                        "method.request.querystring.locale": false,
+                        "method.request.querystring.memberid": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-old-search/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s7r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.platform",
+                            "method.request.querystring.locale",
+                            "method.request.querystring.memberid",
+                            "method.request.querystring.auth"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "0n10sq",
+            "parentId": "qx0xoh",
+            "pathPart": "recommended-games-on-exit",
+            "path": "/sites/{sitename}/platform/{platform}/gameskin/{gameskin}/recommended-games-on-exit",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.gameskin": true,
+                        "method.request.path.platform": true,
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.locale": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-recommended-games-on-exit/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s18r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.platform",
+                            "method.request.path.gameskin",
+                            "method.request.querystring.locale"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "0ox4x7",
+            "parentId": "wm1lzh",
+            "pathPart": "suggested-for-you",
+            "path": "/sites/{sitename}/platform/{platform}/suggested-for-you",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.platform": true,
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.locale": false,
+                        "method.request.querystring.memberid": true
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-suggested-for-you/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s9r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.platform",
+                            "method.request.querystring.memberid",
+                            "method.request.querystring.locale"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "0oxjwp",
+            "parentId": "ey9mxs",
+            "pathPart": "platform",
+            "path": "/sites/{sitename}/platform"
+        },
+        {
+            "id": "17pw6l",
+            "parentId": "90o4vp",
+            "pathPart": "{sectionslug}",
+            "path": "/sites/{sitename}/platform/{platform}/section/{sectionslug}",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.platform": true,
+                        "method.request.path.sectionslug": true,
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.auth": false,
+                        "method.request.querystring.locale": false,
+                        "method.request.querystring.memberid": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-section-view/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s16r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.platform",
+                            "method.request.path.sectionslug",
+                            "method.request.querystring.locale",
+                            "method.request.querystring.auth",
+                            "method.request.querystring.memberid"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "3apf83",
+            "parentId": "wijr1r",
+            "pathPart": "variant",
+            "path": "/sites/{sitename}/memberid/{memberid}/variant",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.memberid": true,
+                        "method.request.path.sitename": true
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-variant/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s21r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.memberid"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "5tr133",
+            "parentId": "zvfeic",
+            "pathPart": "{gamename}",
+            "path": "/sites/{sitename}/platform/{platform}/games/{gamename}",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.gamename": true,
+                        "method.request.path.platform": true,
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.locale": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-game-info/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s5r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.platform",
+                            "method.request.path.gamename",
+                            "method.request.querystring.locale"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "6vgjuy",
+            "parentId": "wm1lzh",
+            "pathPart": "view",
+            "path": "/sites/{sitename}/platform/{platform}/view"
+        },
+        {
+            "id": "77nta4",
+            "parentId": "ey9mxs",
+            "pathPart": "game-titles",
+            "path": "/sites/{sitename}/game-titles",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.locale": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-game-titles/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s6r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.querystring.locale"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "8k73hf",
+            "parentId": "bdq3ph",
+            "pathPart": "sitegames",
+            "path": "/sites/{sitename}/platform/{platform}/view/{viewslug}/sections/{sectionid}/sitegames",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.platform": true,
+                        "method.request.path.sectionid": true,
+                        "method.request.path.sitename": true,
+                        "method.request.path.viewslug": true,
+                        "method.request.querystring.locale": false,
+                        "method.request.querystring.memberid": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-section-games/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s17r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.platform",
+                            "method.request.path.viewslug",
+                            "method.request.path.sectionid",
+                            "method.request.querystring.locale",
+                            "method.request.querystring.memberid"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "90o4vp",
+            "parentId": "wm1lzh",
+            "pathPart": "section",
+            "path": "/sites/{sitename}/platform/{platform}/section"
+        },
+        {
+            "id": "bdq3ph",
+            "parentId": "zplcob",
+            "pathPart": "{sectionid}",
+            "path": "/sites/{sitename}/platform/{platform}/view/{viewslug}/sections/{sectionid}"
+        },
+        {
+            "id": "cl7wzx",
+            "parentId": "wm1lzh",
+            "pathPart": "gameskin",
+            "path": "/sites/{sitename}/platform/{platform}/gameskin"
+        },
+        {
+            "id": "ehl48h",
+            "parentId": "ey9mxs",
+            "pathPart": "memberid",
+            "path": "/sites/{sitename}/memberid"
+        },
+        {
+            "id": "ey9mxs",
+            "parentId": "kveh92",
+            "pathPart": "{sitename}",
+            "path": "/sites/{sitename}"
+        },
+        {
+            "id": "gu5n03",
+            "parentId": "wm1lzh",
+            "pathPart": "game-shuffle",
+            "path": "/sites/{sitename}/platform/{platform}/game-shuffle",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.platform": true,
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.auth": false,
+                        "method.request.querystring.locale": false
+                    },
+                    "methodResponses": {
+                        "204": {
+                            "statusCode": "204"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "MOCK",
+                        "requestTemplates": {
+                            "application/json": "{\"statusCode\": 204}"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s19r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.platform",
+                            "method.request.querystring.locale",
+                            "method.request.querystring.auth"
+                        ],
+                        "integrationResponses": {
+                            "204": {
+                                "statusCode": "204"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "jttz8k",
+            "parentId": "ey9mxs",
+            "pathPart": "historical-game-titles",
+            "path": "/sites/{sitename}/historical-game-titles",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.locale": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-historical-game-titles/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s12r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.querystring.locale"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "kveh92",
+            "parentId": "ujj6yvtog7",
+            "pathPart": "sites",
+            "path": "/sites"
+        },
+        {
+            "id": "kz0pfb",
+            "parentId": "wm1lzh",
+            "pathPart": "game-config",
+            "path": "/sites/{sitename}/platform/{platform}/game-config"
+        },
+        {
+            "id": "ou62p5",
+            "parentId": "ey9mxs",
+            "pathPart": "personalised-extra-data",
+            "path": "/sites/{sitename}/personalised-extra-data",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.locale": false,
+                        "method.request.querystring.memberid": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-personalised-extra-data/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s11r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.querystring.memberid",
+                            "method.request.querystring.locale"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "pcie4o",
+            "parentId": "wm1lzh",
+            "pathPart": "because-you-played",
+            "path": "/sites/{sitename}/platform/{platform}/because-you-played",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.platform": true,
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.locale": false,
+                        "method.request.querystring.memberid": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-because-you-played/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s10r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.platform",
+                            "method.request.querystring.memberid",
+                            "method.request.querystring.locale"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "qq1evn",
+            "parentId": "wm1lzh",
+            "pathPart": "recently-played",
+            "path": "/sites/{sitename}/platform/{platform}/recently-played",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.platform": true,
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.locale": false,
+                        "method.request.querystring.memberid": true
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-recently-played/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s4r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.platform",
+                            "method.request.querystring.memberid",
+                            "method.request.querystring.locale"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "qx0xoh",
+            "parentId": "cl7wzx",
+            "pathPart": "{gameskin}",
+            "path": "/sites/{sitename}/platform/{platform}/gameskin/{gameskin}"
+        },
+        {
+            "id": "u1xkod",
+            "parentId": "wm1lzh",
+            "pathPart": "get-bulk-game-data",
+            "path": "/sites/{sitename}/platform/{platform}/get-bulk-game-data",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.platform": true,
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.locale": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-get-bulk-game-data/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s13r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.platform",
+                            "method.request.querystring.locale"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "ujj6yvtog7",
+            "path": "/"
+        },
+        {
+            "id": "vczslj",
+            "parentId": "kz0pfb",
+            "pathPart": "{gamename}",
+            "path": "/sites/{sitename}/platform/{platform}/game-config/{gamename}",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.gamename": true,
+                        "method.request.path.platform": true,
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.locale": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-game-config/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s4r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.platform",
+                            "method.request.path.gamename",
+                            "method.request.querystring.locale"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "vl9qtu",
+            "parentId": "6vgjuy",
+            "pathPart": "{viewslug}",
+            "path": "/sites/{sitename}/platform/{platform}/view/{viewslug}",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.platform": true,
+                        "method.request.path.sitename": true,
+                        "method.request.path.viewslug": true,
+                        "method.request.querystring.auth": false,
+                        "method.request.querystring.locale": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-view/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s15r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.platform",
+                            "method.request.path.viewslug",
+                            "method.request.querystring.locale",
+                            "method.request.querystring.auth"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "wijr1r",
+            "parentId": "ehl48h",
+            "pathPart": "{memberid}",
+            "path": "/sites/{sitename}/memberid/{memberid}"
+        },
+        {
+            "id": "wm1lzh",
+            "parentId": "0oxjwp",
+            "pathPart": "{platform}",
+            "path": "/sites/{sitename}/platform/{platform}"
+        },
+        {
+            "id": "yvivag",
+            "parentId": "wm1lzh",
+            "pathPart": "minigames",
+            "path": "/sites/{sitename}/platform/{platform}/minigames",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.platform": true,
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.locale": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-mini-games/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s8r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.platform",
+                            "method.request.querystring.locale"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "zl4vnw",
+            "parentId": "wm1lzh",
+            "pathPart": "navigation",
+            "path": "/sites/{sitename}/platform/{platform}/navigation",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.path.platform": true,
+                        "method.request.path.sitename": true,
+                        "method.request.querystring.auth": false,
+                        "method.request.querystring.locale": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200"
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "AWS_PROXY",
+                        "httpMethod": "POST",
+                        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-navigation/invocations",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "contentHandling": "CONVERT_TO_TEXT",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "s14r9k0",
+                        "cacheKeyParameters": [
+                            "method.request.path.sitename",
+                            "method.request.path.platform",
+                            "method.request.querystring.locale",
+                            "method.request.querystring.auth"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "zplcob",
+            "parentId": "vl9qtu",
+            "pathPart": "sections",
+            "path": "/sites/{sitename}/platform/{platform}/view/{viewslug}/sections"
+        },
+        {
+            "id": "zvfeic",
+            "parentId": "wm1lzh",
+            "pathPart": "games",
+            "path": "/sites/{sitename}/platform/{platform}/games"
+        }
+    ]
+}

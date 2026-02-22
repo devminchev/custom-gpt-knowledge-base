@@ -1,0 +1,1043 @@
+{
+  "_shards": {
+    "total": 240,
+    "successful": 240,
+    "failed": 0
+  },
+  "_all": {
+    "primaries": {
+      "docs": {
+        "count": 9505165,
+        "deleted": 1496973
+      },
+      "store": {
+        "size_in_bytes": 38729788147,
+        "reserved_in_bytes": 0
+      }
+    },
+    "total": {
+      "docs": {
+        "count": 28515495,
+        "deleted": 4228741
+      },
+      "store": {
+        "size_in_bytes": 118691625501,
+        "reserved_in_bytes": 0
+      }
+    }
+  },
+  "indices": {
+    ".plugins-ml-model-group": {
+      "uuid": "_zl6m2uIQ_KpdXL_mozBRA",
+      "primaries": {
+        "docs": {
+          "count": 1,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 6114,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 3,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 18342,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "personalised-sections": {
+      "uuid": "yYWUWYWxSqmfFdVNczxVLg",
+      "primaries": {
+        "docs": {
+          "count": 16,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 33046,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 48,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 99138,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "game-sections": {
+      "uuid": "waxEtMS6ReaonS76UU8ZEQ",
+      "primaries": {
+        "docs": {
+          "count": 1365,
+          "deleted": 85
+        },
+        "store": {
+          "size_in_bytes": 4789634,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 4095,
+          "deleted": 255
+        },
+        "store": {
+          "size_in_bytes": 14368902,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".ql-datasources": {
+      "uuid": "eizq-AtYSXqhhHk-DlBVyg",
+      "primaries": {
+        "docs": {
+          "count": 0,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 208,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 0,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 624,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "vitruvian-ai-games-similarity-v1": {
+      "uuid": "TIYp0gFFSXeiMhEq6ULdGg",
+      "primaries": {
+        "docs": {
+          "count": 3239,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 9909448,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 9717,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 29728344,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "vitruvian-ai-because-you-played-z-recommendations-v1": {
+      "uuid": "wU72BrA-SOSgybkdhRF77w",
+      "primaries": {
+        "docs": {
+          "count": 1155317,
+          "deleted": 254473
+        },
+        "store": {
+          "size_in_bytes": 2913080978,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 3465951,
+          "deleted": 763419
+        },
+        "store": {
+          "size_in_bytes": 8739234152,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "ml-game-shuffle": {
+      "uuid": "bKADvsTtQ7eJ05EN2EQABA",
+      "primaries": {
+        "docs": {
+          "count": 2812,
+          "deleted": 6
+        },
+        "store": {
+          "size_in_bytes": 404955,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 8436,
+          "deleted": 18
+        },
+        "store": {
+          "size_in_bytes": 1214865,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "vitruvian-ai-because-you-played-y-recommendations-v1": {
+      "uuid": "vlzEs9hOQ4qIrdNtT8elWQ",
+      "primaries": {
+        "docs": {
+          "count": 1094475,
+          "deleted": 233749
+        },
+        "store": {
+          "size_in_bytes": 2695911049,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 3283425,
+          "deleted": 701247
+        },
+        "store": {
+          "size_in_bytes": 8087709135,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".plugins-ml-task": {
+      "uuid": "Jhq3SG42QiapOS1QDbHLrg",
+      "primaries": {
+        "docs": {
+          "count": 51,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 25349,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 153,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 93651,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "ml-personalised-sections-defaults": {
+      "uuid": "uFhto3EITsq2XjQ6SXVl-Q",
+      "primaries": {
+        "docs": {
+          "count": 8,
+          "deleted": 2
+        },
+        "store": {
+          "size_in_bytes": 54371,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 24,
+          "deleted": 6
+        },
+        "store": {
+          "size_in_bytes": 163113,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "vitruvian-ai-because-you-played-x-recommendations-v1": {
+      "uuid": "eAeQW1nbTQyZxzcV42ElWA",
+      "primaries": {
+        "docs": {
+          "count": 1370814,
+          "deleted": 151494
+        },
+        "store": {
+          "size_in_bytes": 3197290810,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 4112442,
+          "deleted": 454482
+        },
+        "store": {
+          "size_in_bytes": 9591872430,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "layouts": {
+      "uuid": "dn_oWsJFSR-1gSUsRaZYig",
+      "primaries": {
+        "docs": {
+          "count": 407,
+          "deleted": 16
+        },
+        "store": {
+          "size_in_bytes": 678735,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 1221,
+          "deleted": 48
+        },
+        "store": {
+          "size_in_bytes": 2036205,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".opendistro_security": {
+      "uuid": "TGreK3FLSwGWSGnkxbrLng",
+      "primaries": {
+        "docs": {
+          "count": 10,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 63759,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 30,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 191277,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "games-archived-v2": {
+      "uuid": "Kyp3XTrVQm683kI_Lh9Uvg",
+      "primaries": {
+        "docs": {
+          "count": 337,
+          "deleted": 18
+        },
+        "store": {
+          "size_in_bytes": 691129,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 1011,
+          "deleted": 33
+        },
+        "store": {
+          "size_in_bytes": 2072170,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "ml-personalised-sections": {
+      "uuid": "xuvIzTmWSaabDWMFx2IVUw",
+      "primaries": {
+        "docs": {
+          "count": 41,
+          "deleted": 2
+        },
+        "store": {
+          "size_in_bytes": 186829,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 123,
+          "deleted": 6
+        },
+        "store": {
+          "size_in_bytes": 560487,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "marketing-sections": {
+      "uuid": "vjQLLnHfQkWlIZRm11C2bA",
+      "primaries": {
+        "docs": {
+          "count": 810,
+          "deleted": 52
+        },
+        "store": {
+          "size_in_bytes": 572639,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 2430,
+          "deleted": 156
+        },
+        "store": {
+          "size_in_bytes": 1717917,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "themes": {
+      "uuid": "d9KerVRYTfmIYEB_eqPNmQ",
+      "primaries": {
+        "docs": {
+          "count": 0,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 208,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 0,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 624,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "games-v2": {
+      "uuid": "AxbhNj_5TV2md8F7L96xSw",
+      "primaries": {
+        "docs": {
+          "count": 23177,
+          "deleted": 1559
+        },
+        "store": {
+          "size_in_bytes": 43312705,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 69531,
+          "deleted": 4673
+        },
+        "store": {
+          "size_in_bytes": 129352248,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".opensearch-observability": {
+      "uuid": "tgBpg8OWQDKRITLKBaDTxw",
+      "primaries": {
+        "docs": {
+          "count": 0,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 208,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 0,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 624,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "navigation": {
+      "uuid": "CStg-vpQTt6me5sM_1w4ug",
+      "primaries": {
+        "docs": {
+          "count": 428,
+          "deleted": 11
+        },
+        "store": {
+          "size_in_bytes": 290319,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 1284,
+          "deleted": 33
+        },
+        "store": {
+          "size_in_bytes": 870957,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".plugins-ml-model": {
+      "uuid": "oRPI2l6nSRavys6PbjeTxQ",
+      "primaries": {
+        "docs": {
+          "count": 1,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 28141,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 3,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 223023,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".kibana_264559204_contentful_1": {
+      "uuid": "_mgIl2t8ThW9AwIlTiXmsw",
+      "primaries": {
+        "docs": {
+          "count": 1,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 5338,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 3,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 16014,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "games-archived": {
+      "uuid": "e1bMxjw9QLWQAQxbsEOT8w",
+      "primaries": {
+        "docs": {
+          "count": 330,
+          "deleted": 11
+        },
+        "store": {
+          "size_in_bytes": 720402,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 990,
+          "deleted": 33
+        },
+        "store": {
+          "size_in_bytes": 2161206,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "ml-recently-played": {
+      "uuid": "S9aJNTEGS26Hzu2ppv_4UQ",
+      "primaries": {
+        "docs": {
+          "count": 1767483,
+          "deleted": 334671
+        },
+        "store": {
+          "size_in_bytes": 8195512881,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 5302449,
+          "deleted": 908932
+        },
+        "store": {
+          "size_in_bytes": 30738801071,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "games": {
+      "uuid": "a6t_CtZFRxinUBATEoYD5Q",
+      "primaries": {
+        "docs": {
+          "count": 23170,
+          "deleted": 61
+        },
+        "store": {
+          "size_in_bytes": 34742697,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 69510,
+          "deleted": 185
+        },
+        "store": {
+          "size_in_bytes": 104043957,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "categories": {
+      "uuid": "jAFFDD4KT3O4LTa-M8MABg",
+      "primaries": {
+        "docs": {
+          "count": 350,
+          "deleted": 19
+        },
+        "store": {
+          "size_in_bytes": 267544,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 1050,
+          "deleted": 57
+        },
+        "store": {
+          "size_in_bytes": 802632,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "views": {
+      "uuid": "DZPmv-AuRPOgFCor_8kFsg",
+      "primaries": {
+        "docs": {
+          "count": 168,
+          "deleted": 8
+        },
+        "store": {
+          "size_in_bytes": 427994,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 504,
+          "deleted": 14
+        },
+        "store": {
+          "size_in_bytes": 996064,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".kibana_3506402_root_1": {
+      "uuid": "JlZse8LwQyWHL4KWsigDFA",
+      "primaries": {
+        "docs": {
+          "count": 1,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 5336,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 3,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 16008,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".plugins-flow-framework-state": {
+      "uuid": "yByIfwcDQEqbG7jlVkNKtw",
+      "primaries": {
+        "docs": {
+          "count": 2,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 8457,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 6,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 25371,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".plugins-ml-agent": {
+      "uuid": "Dc7_WhJ3Qg2EQTpOEptIuA",
+      "primaries": {
+        "docs": {
+          "count": 1,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 17188,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 3,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 51564,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".plugins-flow-framework-templates": {
+      "uuid": "EF61mxZiRTG1hgDKiXfMEw",
+      "primaries": {
+        "docs": {
+          "count": 2,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 9325,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 6,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 27975,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "ab-variants": {
+      "uuid": "S2YiL9ZMRfqdHxMrFVdrgw",
+      "primaries": {
+        "docs": {
+          "count": 620907,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 39475095,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 1862721,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 117548107,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".kibana_1": {
+      "uuid": "PyOrA1qORUqSh4wqmATivQ",
+      "primaries": {
+        "docs": {
+          "count": 2,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 10629,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 6,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 31887,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "ventures": {
+      "uuid": "HbFygEjqTbWhrOPDCfLS5Q",
+      "primaries": {
+        "docs": {
+          "count": 21,
+          "deleted": 2
+        },
+        "store": {
+          "size_in_bytes": 59805,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 63,
+          "deleted": 6
+        },
+        "store": {
+          "size_in_bytes": 179415,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "sections": {
+      "uuid": "Tc6GjpzzSLOo9CEBXKQn4A",
+      "primaries": {
+        "docs": {
+          "count": 5453,
+          "deleted": 242
+        },
+        "store": {
+          "size_in_bytes": 9889315,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 16359,
+          "deleted": 726
+        },
+        "store": {
+          "size_in_bytes": 29667945,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".tasks": {
+      "uuid": "ah0Sh7d0RReraM-6xDl-Qw",
+      "primaries": {
+        "docs": {
+          "count": 2,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 16970,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 6,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 50910,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "vitruvian-ml-eu-games-recommender-content-based-recommendations-v1": {
+      "uuid": "N22vOWPVT3CQUnX8SJI1gQ",
+      "primaries": {
+        "docs": {
+          "count": 1407135,
+          "deleted": 97033
+        },
+        "store": {
+          "size_in_bytes": 2515328311,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 4221405,
+          "deleted": 291099
+        },
+        "store": {
+          "size_in_bytes": 7545984933,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".plugins-ml-config": {
+      "uuid": "8imdMC6BR_K-dgIt6CHR7Q",
+      "primaries": {
+        "docs": {
+          "count": 2,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 9416,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 6,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 28248,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "personalisation-defaults": {
+      "uuid": "jqViOmnSSCyXPcAuBNXA_w",
+      "primaries": {
+        "docs": {
+          "count": 8,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 100884,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 24,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 302652,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "migrations": {
+      "uuid": "Srpd_vPHRpiBqO7gziPyDw",
+      "primaries": {
+        "docs": {
+          "count": 24,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 99816,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 72,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 299448,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".plugins-flow-framework-config": {
+      "uuid": "bPPBWk1nSQysMn-3Uz-4sQ",
+      "primaries": {
+        "docs": {
+          "count": 1,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 4867,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 3,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 14601,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".plugins-ml-stop-words": {
+      "uuid": "pyf86HG-QlukfQxOrr7Kmg",
+      "primaries": {
+        "docs": {
+          "count": 180,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 41935,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 540,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 125805,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    "vitruvian-ml-eu-games-recommender-v2": {
+      "uuid": "CIBTxFABRFeBB33oig7F6A",
+      "primaries": {
+        "docs": {
+          "count": 2026612,
+          "deleted": 423459
+        },
+        "store": {
+          "size_in_bytes": 19065697290,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 6079836,
+          "deleted": 1103313
+        },
+        "store": {
+          "size_in_bytes": 53548903406,
+          "reserved_in_bytes": 0
+        }
+      }
+    },
+    ".opendistro-job-scheduler-lock": {
+      "uuid": "ZSm67yeuSNeogbK5OrV9TQ",
+      "primaries": {
+        "docs": {
+          "count": 1,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 6018,
+          "reserved_in_bytes": 0
+        }
+      },
+      "total": {
+        "docs": {
+          "count": 3,
+          "deleted": 0
+        },
+        "store": {
+          "size_in_bytes": 18054,
+          "reserved_in_bytes": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+    "FunctionName": "personalisation-lobby-game-titles",
+    "FunctionArn": "arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-game-titles",
+    "Role": "arn:aws:iam::658499212567:role/r_lambda_personalisation-lobby-game-titles",
+    "CodeSize": 0,
+    "Description": "Game Tiles Lambda Function using Typescript",
+    "Timeout": 360,
+    "MemorySize": 256,
+    "LastModified": "2025-05-09T15:03:03.000+0000",
+    "CodeSha256": "7eae5da02fce2cd481c820fc9d2b5fd66fd781752944865d04c2ef0a13dd527c",
+    "Version": "$LATEST",
+    "Environment": {
+        "Variables": {
+            "CONTENTFUL_SPACE_LOCALE": "en-GB",
+            "ENABLE_XRAY": "false",
+            "OS_PASS": "xAmM6VD&U66xj5eP",
+            "API_KEY": "",
+            "EXECUTION_ENVIRONMENT": "production",
+            "OS_USER": "personalisation_lobby_lambdas",
+            "HOST": "https://lobbycontent-opsearch.prod.eu00.aws.ballys.tech",
+            "REGION": "EU"
+        }
+    },
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "aea75dd0-0425-45c4-a732-cd0ca47e9417",
+    "State": "Inactive",
+    "StateReason": "The function is currently idle.",
+    "StateReasonCode": "Idle",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Image",
+    "Architectures": [
+        "x86_64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/personalisation-lobby-game-titles"
+    }
+}

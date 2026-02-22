@@ -1,0 +1,32 @@
+{
+    "id": "p7hk9o",
+    "name": "contenful",
+    "description": "Main usage plan funnelling requests from Contenful",
+    "apiStages": [
+        {
+            "apiId": "qgo25v8kfa",
+            "stage": "v1"
+        }
+    ],
+    "throttle": {
+        "burstLimit": 500,
+        "rateLimit": 1000.0
+    },
+    "tags": {
+        "map-migrated": "mig9N7YJ8QM5D",
+        "ops:environment": "prod",
+        "ops:managed-by": "terraform",
+        "ops:platform": "Excite",
+        "ops:region": "eu-west-2",
+        "ops:status": "live-hidden",
+        "ops:tf_module": "terraform-aws-api-gateway",
+        "ops:tfe_workspace": "terraform-aws-excite-prod-eu00",
+        "org:business-area": "Excite Development",
+        "org:department": "Excite Platform",
+        "org:division": "Technology",
+        "org:team": "Excite Platform Engineering",
+        "sec:data-classification": "private",
+        "sec:regulated": "true",
+        "sec:territory": "EU"
+    }
+}

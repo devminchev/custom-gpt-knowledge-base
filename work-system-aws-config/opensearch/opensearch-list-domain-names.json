@@ -1,0 +1,8 @@
+{
+    "DomainNames": [
+        {
+            "DomainName": "personalisation-lobby",
+            "EngineType": "OpenSearch"
+        }
+    ]
+}

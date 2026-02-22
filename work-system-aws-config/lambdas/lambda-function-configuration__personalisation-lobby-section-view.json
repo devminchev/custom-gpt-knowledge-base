@@ -1,0 +1,45 @@
+{
+    "FunctionName": "personalisation-lobby-section-view",
+    "FunctionArn": "arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-section-view",
+    "Role": "arn:aws:iam::658499212567:role/r_lambda_personalisation-lobby-section-view",
+    "CodeSize": 0,
+    "Description": "Section View Lambda Function using Typescript",
+    "Timeout": 360,
+    "MemorySize": 256,
+    "LastModified": "2026-01-20T12:14:11.000+0000",
+    "CodeSha256": "62a523eb0e8b04664d8527936b2749940b0fbfcd876f2e4715ef801844ac3e6e",
+    "Version": "$LATEST",
+    "Environment": {
+        "Variables": {
+            "CONTENTFUL_SPACE_LOCALE": "en-GB",
+            "ENABLE_XRAY": "false",
+            "OS_PASS": "xAmM6VD&U66xj5eP",
+            "API_KEY": "",
+            "EXECUTION_ENVIRONMENT": "production",
+            "OS_USER": "personalisation_lobby_lambdas",
+            "HOST": "https://lobbycontent-opsearch.prod.eu00.aws.ballys.tech",
+            "REGION": "EU"
+        }
+    },
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "37029600-76c6-42af-9d62-e696bfcbdcd1",
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Image",
+    "Architectures": [
+        "x86_64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/personalisation-lobby-section-view"
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "FunctionName": "personalisation-lobby-old-search-rs",
+  "Configured": false,
+  "MaxEventAgeInSeconds": null,
+  "MaximumRetryAttempts": null,
+  "DestinationConfig": null,
+  "Reason": "ResourceNotFoundException: no EventInvokeConfig set"
+}

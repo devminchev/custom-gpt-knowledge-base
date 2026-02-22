@@ -1,0 +1,38 @@
+{
+    "httpMethod": "GET",
+    "authorizationType": "NONE",
+    "apiKeyRequired": false,
+    "requestParameters": {
+        "method.request.path.platform": true,
+        "method.request.path.sitename": true,
+        "method.request.querystring.auth": false,
+        "method.request.querystring.locale": false,
+        "method.request.querystring.memberid": false
+    },
+    "methodResponses": {
+        "200": {
+            "statusCode": "200"
+        }
+    },
+    "methodIntegration": {
+        "type": "AWS_PROXY",
+        "httpMethod": "POST",
+        "uri": "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:658499212567:function:personalisation-lobby-old-search-ts/invocations",
+        "passthroughBehavior": "WHEN_NO_MATCH",
+        "contentHandling": "CONVERT_TO_TEXT",
+        "timeoutInMillis": 29000,
+        "cacheNamespace": "s7r9k0",
+        "cacheKeyParameters": [
+            "method.request.path.sitename",
+            "method.request.path.platform",
+            "method.request.querystring.locale",
+            "method.request.querystring.memberid",
+            "method.request.querystring.auth"
+        ],
+        "integrationResponses": {
+            "200": {
+                "statusCode": "200"
+            }
+        }
+    }
+}
