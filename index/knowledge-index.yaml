@@ -1,5 +1,5 @@
-version: 3
-last_updated: 2026-02-22
+version: 2
+last_updated: 2025-12-25
 categories:
   projects:
     description: Project-level canonical sources and requirements.
@@ -28,16 +28,6 @@ categories:
     paths:
       - architecture/README.md
       - architecture/aws/
-  work_system_aws_config:
-    description: Production AWS service configuration exports and operational reports.
-    canonical: true
-    paths:
-      - work-system-aws-config/README.md
-      - work-system-aws-config/apigw/
-      - work-system-aws-config/lambdas/
-      - work-system-aws-config/opensearch/
-      - work-system-aws-config/cloudwatch/
-      - work-system-aws-config/waf/
   contentful_models:
     description: Contentful CMS models, schemas, and related docs.
     canonical: true
@@ -51,17 +41,29 @@ categories:
     canonical: true
     paths:
       - contentful-models/contentful-custom-apps-architecture.md
+  search_pipeline:
+    description: Search indexing and query pipeline references.
+    canonical: true
+    paths:
+      - search-pipeline/README.md
+      - search-pipeline/opensearch-index-mapping.json
+      - search-pipeline/contentful-opensearch-schema-guide.md
   epics:
     description: Product epics, investigations, and proposals.
     canonical: false
     paths:
       - epics/README.md
+  shared_knowledge:
+    description: Glossary, design patterns, and cross-cutting references.
+    canonical: false
+    paths:
+      - shared-knowledge/README.md
+      - shared-knowledge/glossary.md
   guides:
     description: Supplemental guides and GPT context instructions.
     canonical: false
     paths:
       - guides/README.md
-      - guides/work-system-aws-config-routing-guide.md
       - gpt-context-guides/README.md
   appendix:
     description: Diagrams and supplemental visuals.

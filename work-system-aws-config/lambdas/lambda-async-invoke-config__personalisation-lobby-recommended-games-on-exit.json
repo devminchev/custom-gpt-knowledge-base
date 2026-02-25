@@ -1,8 +1,0 @@
-{
-  "FunctionName": "personalisation-lobby-recommended-games-on-exit",
-  "Configured": false,
-  "MaxEventAgeInSeconds": null,
-  "MaximumRetryAttempts": null,
-  "DestinationConfig": null,
-  "Reason": "ResourceNotFoundException: no EventInvokeConfig set"
-}
