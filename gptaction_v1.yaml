@@ -1,0 +1,197 @@
+openapi: 3.1.1
+info:
+  title: Work System Expert GitHub Knowledge Base
+  version: 1.1.1
+  description: >
+    Read-only GitHub API actions for searching and retrieving files from devminchev/custom-gpt-knowledge-base(single-host
+    api.github.com). Use minimal calls: start with index.md, then targeted search, then fetch exact files.
+servers:
+  - url: https://api.github.com
+paths:
+  /search/code:
+    get:
+      operationId: search_repo_code
+      summary: Search within the repository (GitHub code search)
+      description: |
+        Keyword/token-based GitHub code search. The query MUST include repo:devminchev/custom-gpt-knowledge-base.
+      parameters:
+        - name: q
+          in: query
+          required: true
+          schema:
+            type: string
+          description: "Example: repo:devminchev/custom-gpt-knowledge-base siteGameV2 alias"
+        - name: per_page
+          in: query
+          required: false
+          schema:
+            type: integer
+          description: Results per page (max 100).
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+          description: Page number.
+      responses:
+        "200":
+          description: Search results.
+  /repos/{owner}/{repo}/contents/{path}:
+    get:
+      operationId: get_repo_content
+      summary: Get file or directory metadata (Contents API)
+      description: >
+        Returns file metadata and sometimes base64 content for small files. For reliable raw retrieval (including
+        images/large files), use the returned SHA with get_git_blob.
+      parameters:
+        - name: owner
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Repository owner (e.g. devminchev).
+        - name: repo
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Repository name (e.g. custom-gpt-knowledge-base).
+        - name: path
+          in: path
+          required: true
+          schema:
+            type: string
+          description: File path within repo (e.g. index.md).
+        - name: ref
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Branch, tag, or commit SHA (default main).
+      responses:
+        "200":
+          description: Content metadata response.
+  /repos/{owner}/{repo}/contents:
+    get:
+      operationId: list_repo_directory
+      summary: List a directory (Contents API)
+      description: |
+        Lists files/folders at a given directory path (or repo root if path omitted).
+      parameters:
+        - name: owner
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Repository owner (e.g. devminchev).
+        - name: repo
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Repository name (e.g. custom-gpt-knowledge-base).
+        - name: path
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Directory path (empty = repo root).
+        - name: ref
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Branch, tag, or commit SHA (default main).
+      responses:
+        "200":
+          description: Directory listing response.
+  /repos/{owner}/{repo}/git/ref/heads/{branch}:
+    get:
+      operationId: get_branch_ref
+      summary: Get branch ref SHA
+      description: Returns the branch ref object SHA, used to fetch a tree.
+      parameters:
+        - name: owner
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Repository owner (e.g. devminchev).
+        - name: repo
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Repository name (e.g. custom-gpt-knowledge-base).
+        - name: branch
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Branch name (e.g. main).
+      responses:
+        "200":
+          description: Branch ref response.
+  /repos/{owner}/{repo}/git/trees/{tree_sha}:
+    get:
+      operationId: get_repo_tree
+      summary: Get repository tree
+      description: |
+        Use recursive=1 for full inventory. tree_sha comes from get_branch_ref.
+      parameters:
+        - name: owner
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Repository owner (e.g. devminchev).
+        - name: repo
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Repository name (e.g. custom-gpt-knowledge-base).
+        - name: tree_sha
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Tree SHA from branch ref.
+        - name: recursive
+          in: query
+          required: false
+          schema:
+            type: integer
+          description: Set to 1 for recursive tree.
+      responses:
+        "200":
+          description: Tree response.
+  /repos/{owner}/{repo}/git/blobs/{file_sha}:
+    get:
+      operationId: get_git_blob
+      summary: Get raw file content by SHA (Git Blob API)
+      description: >
+        Fetches file content (base64) by blob SHA. Use this for reliable retrieval of markdown, json, and binary files
+        (png/jpg/svg), using the SHA obtained from get_repo_content or get_repo_tree.
+      parameters:
+        - name: owner
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Repository owner (e.g. devminchev).
+        - name: repo
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Repository name (e.g. custom-gpt-knowledge-base).
+        - name: file_sha
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Blob SHA for the file.
+      responses:
+        "200":
+          description: Blob response (includes base64 content).
