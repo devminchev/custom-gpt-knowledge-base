@@ -1,3 +1,8 @@
+---
+title: "**Recommended Technical Solution Strategy — Contentful Taxonomy Integration**"
+tags: [projects, advanced-search, target]
+aliases: []
+---
 # **Recommended Technical Solution Strategy — Contentful Taxonomy Integration**
 
 ### *(Aligned with the Recommended-Flattened Phase-1 & Phase-2 Architecture for Advanced Search)*

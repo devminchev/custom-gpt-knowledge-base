@@ -1,3 +1,8 @@
+---
+title: "iGaming CMS Repo / Resource Oriented Architecture"
+tags: [contentful-models]
+aliases: []
+---
 # iGaming CMS Repo / Resource Oriented Architecture
 
 ## 1. Overview

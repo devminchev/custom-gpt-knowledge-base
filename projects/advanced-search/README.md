@@ -1,3 +1,8 @@
+---
+title: "Advanced Search Knowledge Base Guide"
+tags: [projects, advanced-search]
+aliases: []
+---
 # Advanced Search Knowledge Base Guide
 
 ## 🎯 Purpose

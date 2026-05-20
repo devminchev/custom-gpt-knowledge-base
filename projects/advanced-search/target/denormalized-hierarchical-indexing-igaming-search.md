@@ -1,3 +1,8 @@
+---
+title: "Denormalised Hierarchical Indexing for iGaming Search (Contentful → OpenSearch)"
+tags: [projects, advanced-search, target]
+aliases: []
+---
 # Denormalised Hierarchical Indexing for iGaming Search (Contentful → OpenSearch)
 
 Guiding Principles

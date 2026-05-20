@@ -1,3 +1,8 @@
+---
+title: "Current Search Overview - Analysis"
+tags: [projects, advanced-search, current]
+aliases: []
+---
 # Current Search Overview - Analysis
 
 Overview

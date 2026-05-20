@@ -1,3 +1,8 @@
+---
+title: "Introduction and Purpose"
+tags: [architecture, aws, lobby-aws-lambda]
+aliases: []
+---
 # Introduction and Purpose
 
 The **Personalised Lobby** project is a backend service that delivers customized gaming content for multiple online casino “ventures” (sites/brands) and platforms (e.g. desktop or mobile). It allows the frontend client to fetch **personalized lobby content** – such as navigation menus, game listings, and recommendations – via a set of API endpoints. Content is managed by non-technical staff in a headless CMS (Contentful) and stored in an AWS **OpenSearch** cluster for fast retrieval by the APIs. The system ensures that each player sees a lobby tailored to their profile (e.g. recently played games, recommended games) as well as content specific to their region and site. In simpler terms, this codebase powers the dynamic lobby experience on the front-end, determining *what games or categories to show to each user and in what order*, using data from a CMS and user activity.

@@ -1,3 +1,8 @@
+---
+title: "Contentful → OpenSearch Schema Guide (Canonical Stub)"
+tags: [search-pipeline]
+aliases: []
+---
 # Contentful → OpenSearch Schema Guide (Canonical Stub)
 
 This document is the canonical cross-project entry point for schema guidance that spans

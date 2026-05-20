@@ -1,3 +1,8 @@
+---
+title: "Appendix"
+tags: [appendix]
+aliases: []
+---
 # Appendix
 
 Supplemental visuals and binary assets referenced by documentation.

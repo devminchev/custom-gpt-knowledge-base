@@ -1,3 +1,8 @@
+---
+title: "06 · Taxonomy, Netflix-Style Modeling, and Future Strategy"
+tags: [contentful-models]
+aliases: []
+---
 # 06 · Taxonomy, Netflix-Style Modeling, and Future Strategy
 
 **Audience:** architects, personalisation engineers, CMS owners  

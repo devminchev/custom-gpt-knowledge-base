@@ -1,3 +1,8 @@
+---
+title: "**Vision Board — Game Release Automation Platform**"
+tags: [projects, game-release-automation, product, vision]
+aliases: []
+---
 # **Vision Board — Game Release Automation Platform**
 
 A strategic, architectural, and operational north-star for building a fully automated, reliable, scalable multi-venture game-release ecosystem integrated with Contentful, Bynder, Jira, CABO, Wallet Platform, UKGC, and internal approval workflows.

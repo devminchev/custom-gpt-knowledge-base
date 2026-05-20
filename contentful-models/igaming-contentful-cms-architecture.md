@@ -1,3 +1,8 @@
+---
+title: "Contentful CMS Custom Apps Architecture"
+tags: [contentful-models]
+aliases: []
+---
 # Contentful CMS Custom Apps Architecture
 
 ## High level architecture – External → Contentful → AWS → Monitoring

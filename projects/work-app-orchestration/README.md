@@ -1,3 +1,8 @@
+---
+title: "Work App Orchestration Knowledge Base Guide"
+tags: [projects, work-app-orchestration]
+aliases: []
+---
 # Work App Orchestration Knowledge Base Guide
 
 ## 🎯 Purpose

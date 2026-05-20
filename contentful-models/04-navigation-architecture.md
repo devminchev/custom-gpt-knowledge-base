@@ -1,3 +1,8 @@
+---
+title: "04 · Navigation Architecture (Generic + IG)"
+tags: [contentful-models]
+aliases: []
+---
 # 04 · Navigation Architecture (Generic + IG)
 
 **Audience:** architects, frontend leads, CMS owners  

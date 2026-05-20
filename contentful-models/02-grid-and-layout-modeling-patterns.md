@@ -1,3 +1,8 @@
+---
+title: "02 · Grid and Layout Modeling Patterns"
+tags: [contentful-models]
+aliases: []
+---
 # 02 · Grid and Layout Modeling Patterns
 
 **Audience:** architects, frontend leads, content modeling experts  

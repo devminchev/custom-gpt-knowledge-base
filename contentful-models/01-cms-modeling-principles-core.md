@@ -1,3 +1,8 @@
+---
+title: "01 Cms Modeling Principles Core"
+tags: [contentful-models]
+aliases: []
+---
  # 01 · CMS Modeling Principles — Core Guide
 
  **Audience:** software / solution architects, lead engineers, senior content designers  

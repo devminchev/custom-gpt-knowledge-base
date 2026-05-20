@@ -1,3 +1,8 @@
+---
+title: "Contentful Models"
+tags: [contentful-models]
+aliases: []
+---
 # Contentful Models
 
 This folder houses Contentful CMS models, schemas, and supporting documentation.

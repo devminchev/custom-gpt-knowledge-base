@@ -1,3 +1,8 @@
+---
+title: "03 · iGaming CMS Model ADR (IG Views, Grids, Carousels, Visibility)"
+tags: [contentful-models]
+aliases: []
+---
 # 03 · iGaming CMS Model ADR (IG Views, Grids, Carousels, Visibility)
 
 **Audience:** architects, platform engineers, CMS owners  

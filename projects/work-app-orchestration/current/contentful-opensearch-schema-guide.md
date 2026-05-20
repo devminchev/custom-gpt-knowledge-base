@@ -1,3 +1,8 @@
+---
+title: "Contentful CMS → OpenSearch Data Schema Guide"
+tags: [projects, work-app-orchestration, current]
+aliases: []
+---
 # Contentful CMS → OpenSearch Data Schema Guide
 
 ## 1) Content models & OpenSearch docs Map

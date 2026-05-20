@@ -1,3 +1,8 @@
+---
+title: "Contentful Game Models Blueprint"
+tags: [projects, work-app-orchestration, current]
+aliases: []
+---
 # Contentful Game Models Blueprint
 
 ## Contentful Game Models: `siteGameV2` ↔ `gameV2`

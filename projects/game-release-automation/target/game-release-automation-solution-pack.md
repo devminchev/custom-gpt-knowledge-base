@@ -1,3 +1,8 @@
+---
+title: "Game Release Automation Solution Pack"
+tags: [projects, game-release-automation, target]
+aliases: []
+---
 Background
 
 The Game Release Automation initiative aims to streamline and harden the end-to-end lifecycle of game releases by centralizing orchestration, enforcing role-based approvals, and making all changes auditable and compliant. This refined version incorporates updated business goals and expanded product requirements, including:

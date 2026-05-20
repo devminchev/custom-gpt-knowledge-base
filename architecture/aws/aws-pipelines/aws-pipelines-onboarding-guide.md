@@ -1,3 +1,8 @@
+---
+title: "✅ **1. Architecture Poster**"
+tags: [architecture, aws, aws-pipelines]
+aliases: []
+---
 # ✅ **1. Architecture Poster**
 
 **A single visual that shows the entire system at once — from developer commit → CI templates → Vault → Artifactory → ECR → Lambda → Jira → RC/Release promotion.**

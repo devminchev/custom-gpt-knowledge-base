@@ -1,3 +1,8 @@
+---
+title: "Contentful Hooks"
+tags: [architecture, aws]
+aliases: []
+---
 ## Introduction and Project Overview
 
 **contentful-hooks** is an internal Node.js CLI tool designed to automate the management of Contentful webhooks for an iGaming platform. Its primary purpose is to keep Contentful CMS data in sync with AWS OpenSearch indexes by programmatically creating, updating, and deleting webhooks that connect the two systems[GitHub](https://gitlab.ballys.tech/excite/native/tools/contentful-hooks/blob/cd700ee370b9b778a98e778a152d6c3129bdc973/Readme.md#L3-L10). In plain terms, this tool eliminates the **manual effort** of configuring multiple webhooks via the Contentful web app. Instead of clicking through Contentful’s UI for each content model and environment, engineers can run a single command to provision or update **all required webhooks** for a given environment[GitHub](https://gitlab.ballys.tech/excite/native/tools/contentful-hooks/blob/cd700ee370b9b778a98e778a152d6c3129bdc973/Readme.md#L7-L11). This ensures that whenever content (like game data, sections, or layouts) is published or modified in Contentful, an HTTP request is automatically sent to an AWS endpoint that updates the corresponding OpenSearch index.

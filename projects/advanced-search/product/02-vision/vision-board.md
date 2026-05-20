@@ -1,3 +1,8 @@
+---
+title: "VISION BOARD – Search Improvements"
+tags: [projects, advanced-search, product, vision]
+aliases: []
+---
 # VISION BOARD – Search Improvements   
 
 ## SEARCH  

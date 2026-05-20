@@ -1,3 +1,8 @@
+---
+title: "Game Release Automation - MoSCoW Requirements"
+tags: [projects, game-release-automation, product, requirements]
+aliases: []
+---
 # Game Release Automation - MoSCoW Requirements
 
 ## Background and strategic fit
